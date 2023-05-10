@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #2c2c2c;
+    color: white;
+}
+
+header {
+    border: 1px solid red;
+    height: 20%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+main {
+    border: 1px solid blue;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section menu {
+    border: 1px solid yellow;
+    height: 15%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main section card-container {
+    border: 1px solid purple;
+    width: 100%;
+    height: 60%;
+}
+
+main section selected-container {
+    border: 1px solid green;
+    width: 100%;
+    height: 10%;
+}
