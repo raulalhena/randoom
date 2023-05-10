@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="schema.css">
+  <link rel="stylesheet" href="/styles/schema.css">
   <title>RandVenture</title>
 </head>
 
@@ -15,13 +15,14 @@
     <h1>
       RandVenture
     </h1>
-    <h4>
-      TSTSTS
-    </h4>
+    <h6>
+      Escoge las categorías que quieras o crea la tuya propia, mezcla las cartas y elige una de ellas.
+      ¡Cada partida es una nueva aventura, cada elección cuenta!
+    </h6>
   </header>
 
   <main>
-    <section>
+    <section id="menu-section">
       <menu>
         <select name="categories" id="categories">
           <option value="all">Todas</option>
@@ -34,10 +35,10 @@
         <button>Crea tu propia bucket list!</button>
       </menu>
     </section>
-    <section>
+    <section id="card-container-section">
       <card-container>
         <card>
-          c1
+          <img src="_resources/platipus.jpg" alt="Travel to himalaya">
         </card>
         <card>
           c1
@@ -67,16 +68,25 @@
           c1
         </card>
       </card-container>
+      <button>Shuffle</button>
     </section>
-    <section>
+    <section id="selected-container-section">
       <selected-container>
-        <card>
-          c2
-        </card>
+        <card-selected>
+          <img src="_resources/platipus.jpg" alt="Travel to himalaya">
+          <p>Travel to himalya</p>
+        </card-selected>
+        <card-selected>
+          <img src="_resources/platipus.jpg" alt="Travel to himalaya">
+          <p>Travel to himalya</p>
+        </card-selected>
       </selected-container>
     </section>
   </main>
-  <script src="app.js"></script>
+  <footer>
+    All rights reserved ®
+  </footer>
+  <script src="/js/app.js"></script>
 </body>
 
 </html>
