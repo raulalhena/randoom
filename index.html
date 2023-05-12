@@ -1,99 +1,176 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/schema.css" />
+    <title>RandVenture</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/randoom/styles/schema.css">
-  <title>RandVenture</title>
-</head>
+  <body>
+    <header>
+      <img src="/img/logo.png" />
+      <button>?</button>
+    </header>
 
-<body>
+    <main>
+      <section id="menu-section">
+        <nav>
+          <button>Todas</button>
+          <button>Legado</button>
+          <button>Adrenalina</button>
+          <button>Cultura</button>
+          <button>Viajes</button>
+          <button>Comida</button>
+        </nav>
+        <button>Añade una aventrua personalizada</button>
+      </section>
+      <section id="card-container-section">
+        <div class="card-container">
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+          <article>
+            <img src="/img/todas.png" alt="Travel to himalaya" />
+          </article>
+        </div>
+        <button>Mezclar</button>
+        <button>Empezar de nuevo</button>
+      </section>
+      <section id="selected-container-section">
+        <div class="selected-container">
+          <h2>¡Te has animado a todo esto!</h2>
+          <article class="card-selected">
+            <p>Travel to himalya</p>
+          </article>
+          <article class="card-selected">
+            <p>Travel to himalya</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>All rights reserved ®</footer>
 
-  <header>
-    <h1>
-      RandVenture
-    </h1>
-    <h6>
-      Escoge las categorías que quieras o crea la tuya propia, mezcla las cartas y elige una de ellas.
-      ¡Cada partida es una nueva aventura, cada elección cuenta!
-    </h6>
-  </header>
-
-  <main>
-    <section id="menu-section">
-      <menu>
-        <select name="categories" id="categories">
-          <option value="all">Todas</option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
+    <!--personalizar aventura-->
+    <dialog open="" id="personaliza-aventura">
+      <button>&times;</button>
+      <section>
+        <h2>Personaliza la aventura</h2>
+        <select name="categorias" id="categorias">
+          <option value="">Categorias</option>
+          <option value="">Legado</option>
+          <option value="">Adrenalina</option>
+          <option value="">Cultura</option>
+          <option value="">Viajes</option>
+          <option value="">Comida</option>
         </select>
-        <button>Crea tu propia bucket list!</button>
-      </menu>
-    </section>
-    <section id="card-container-section">
-      <div class="card-container">
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-        <article>
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-        </article>
-      </div>
-      <button>Shuffle</button>
-    </section>
-    <section id="selected-container-section">
-      <div class="selected-container">
-        <article class="card-selected">
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-          <p>Travel to himalya</p>
-        </article>
-        <article class="card-selected">
-          <img src="/randoom/img/platipus.jpg" alt="Travel to himalaya">
-          <p>Travel to himalya</p>
-        </article>
-      </div>
-    </section>
-  </main>
-  <footer>
-    All rights reserved ®
-  </footer>
-  <script src="/randoom/js/app.js"></script>
-</body>
+        <input type="text" placeholder="Título" />
+        <textarea
+          name="descripcion"
+          id=""
+          cols="30"
+          rows="5"
+          placeholder="Descripcion"
+        ></textarea>
+        <button>Guardar</button>
+      </section>
+    </dialog>
 
+    <!--crear tu aventura-->
+    <dialog open="" id="crear-aventura">
+      <button>&times;</button>
+      <section>
+        <h2>¡Añade tu nueva aventura!</h2>
+        <select name="categorias" id="categorias">
+          <option value="">Categorias</option>
+          <option value="">Legado</option>
+          <option value="">Adrenalina</option>
+          <option value="">Cultura</option>
+          <option value="">Viajes</option>
+          <option value="">Comida</option>
+        </select>
+        <input type="text" placeholder="Título" />
+        <textarea
+          name="descripcion"
+          id=""
+          cols="30"
+          rows="5"
+          placeholder="Descripcion"
+        ></textarea>
+        <button>Añadir</button>
+      </section>
+    </dialog>
+
+    <!--aventura seleccionada-->
+    <dialog open="" id="tarjeta-seleccionada">
+      <button>&times;</button>
+      <h2>¡Enhorabuena! Tu próxima aventura es...</h2>
+      <section>
+        <h2>SOPA DE MELÓN</h2>
+        <p>
+          Una sopa fría hecha con melón fresco, yogur, menta y un toque de
+          limón. Es refrescante y sorprendentemente deliciosa.
+        </p>
+        <div>
+          <h3>Comparte tu aventura</h3>
+          <button><i>intagram</i></button>
+          <button><i>twiter</i></button><button><i>facebook</i></button>
+        </div>
+        <button>Agenda tu aventura <i>calendario</i></button>
+      </section>
+    </dialog>
+
+    <!--dialogo luego de mezclar-->
+    <dialog open="">
+      <h2>¡Es hora de elegir tu aventura!</h2>
+    </dialog>
+
+    <!--información-->
+    <dialog open="" id="informacion">
+      <button>&times;</button>
+      <section>
+        <h2>DESCUBRE EL EMOCIONANTE CAOS DE LA AVENTURA</h2>
+        <ul>
+          <li>Escoge una categoria</li>
+          <li>Edita o crea tu propia aventura</li>
+          <li>Mezcla las cartas</li>
+          <li>Elige una de ellas</li>
+        </ul>
+        <h3>¡Cada partida es una nueva aventura, cada elección cuenta!</h3>
+      </section>
+    </dialog>
+
+    <script src="/js/app.js"></script>
+  </body>
 </html>
