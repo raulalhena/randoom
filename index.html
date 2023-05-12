@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/schema.css" />
+    <link rel="stylesheet" href="/styles/base.css" />
     <title>RandVenture</title>
   </head>
 
@@ -65,8 +65,10 @@
             <img src="/img/todas.png" alt="Travel to himalaya" />
           </article>
         </div>
-        <button>Mezclar</button>
-        <button>Empezar de nuevo</button>
+        <div class="action-btn-container">
+          <button>Mezclar</button>
+          <button>Empezar de nuevo</button>
+        </div>
       </section>
       <section id="selected-container-section">
         <div class="selected-container">
@@ -108,7 +110,7 @@
     </dialog>
 
     <!--crear tu aventura-->
-    <dialog open="" id="crear-aventura">
+    <dialog id="crear-aventura">
       <button>&times;</button>
       <section>
         <h2>¡Añade tu nueva aventura!</h2>
@@ -133,9 +135,8 @@
     </dialog>
 
     <!--aventura seleccionada-->
-    <dialog open="" id="tarjeta-seleccionada">
+    <dialog id="tarjeta-seleccionada">
       <button>&times;</button>
-      <h2>¡Enhorabuena! Tu próxima aventura es...</h2>
       <section>
         <h2>SOPA DE MELÓN</h2>
         <p>
@@ -152,12 +153,12 @@
     </dialog>
 
     <!--dialogo luego de mezclar-->
-    <dialog open="">
+    <dialog>
       <h2>¡Es hora de elegir tu aventura!</h2>
     </dialog>
 
     <!--información-->
-    <dialog open="" id="informacion">
+    <dialog id="informacion">
       <button>&times;</button>
       <section>
         <h2>DESCUBRE EL EMOCIONANTE CAOS DE LA AVENTURA</h2>
