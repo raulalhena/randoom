@@ -101,33 +101,30 @@ main #selected-container-section {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
 .selected-container {
   border: 1px solid yellow;
-  width: 100%;
   height: 80%;
-
-  display: flex;
-  flex-direction: column;
   gap: 5px;
 }
 
 .card-selected {
-  width: 80%;
-  border: 1px solid orange;
-  display: flex;
-  gap: 5px;
+  border: 1px solid rgb(177, 34, 34);
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 5px;
 }
 
-.card-selected img {
-  width: 30px;
-  height: 50px;
+hr {
+  width: 90%;
 }
 
 footer {
   border: 1px solid red;
   text-align: center;
+  padding: 5px;
 }
 
 dialog {
@@ -135,10 +132,73 @@ dialog {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  height: 300px;
   background-image: url("/img/todas.png");
+  padding: 30px 15px 25px 15px;
 }
 
 dialog section {
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin: auto;
+  padding: 10px;
+}
+
+dialog section input,
+select,
+textarea {
+  width: 90%;
+  padding: 6px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+}
+
+#tarjeta-seleccionada {
+  padding: 190px 0 0 0;
+}
+
+#tarjeta-seleccionada section {
+  width: 100%;
+  text-align: left;
+}
+
+.social-media {
+  text-align: center;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 9px 7px;
+}
+
+.social-media-btns {
+  text-align: center;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.calendar-btn {
+  padding: 9px 7px;
+}
+
+#selected-container-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#selected-container-section ul {
+list-style: none;
 }
