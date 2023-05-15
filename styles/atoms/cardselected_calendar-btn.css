@@ -1,0 +1,15 @@
+#card-selected .calendar-btn {
+    padding: 9px 7px;
+    border-radius: 15px;
+    font-weight: 200;
+    background: #2D1029;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#card-selected .calendar-btn img {
+    width: 20px;
+    height: 20px;
+}

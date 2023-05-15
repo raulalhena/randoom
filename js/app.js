@@ -1,5 +1,5 @@
 const helpButton = document.getElementsByClassName("help-btn");
-const infoDialogue = document.getElementById("informacion");
+const infoDialogue = document.getElementById("information");
 const closeButtons = document.getElementsByClassName("close-btn");
 const closeDialogues = document.getElementsByTagName("dialog");
 

@@ -1,0 +1,10 @@
+dialog section input {
+    width: 90%;
+    padding: 6px;
+
+    /* Look */
+    background: #fff;
+    color: #D9D9D9;
+    border-radius: 15px;
+    border: 1px solid #F7F7F7;
+}

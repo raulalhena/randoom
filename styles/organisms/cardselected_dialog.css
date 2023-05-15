@@ -1,0 +1,7 @@
+@import url("/styles/molecules/cardselected_social-media.css");
+@import url("/styles/molecules/cardselected_section.css");
+@import url("/styles/molecules/cardselected_social-media-btns.css");
+
+#card-selected {
+    padding: 190px 0 0 0;
+}

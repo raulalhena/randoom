@@ -1,0 +1,10 @@
+#card-selected .social-media-btns {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    /* Look */
+    background-color: transparent;
+}

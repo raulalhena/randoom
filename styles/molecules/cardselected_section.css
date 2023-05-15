@@ -1,0 +1,14 @@
+@import url("/styles/atoms/cardselected_title.css");
+@import url("/styles/atoms/cardselected_text.css");
+@import url("/styles/atoms/cardselected_subtitle.css");
+@import url("/styles/atoms/cardselected_icon.css");
+@import url("/styles/atoms/cardselected_calendar-btn.css");
+@import url("/styles/atoms/cardselected_social-media-btn.css");
+
+#card-selected section {
+    width: 100%;
+    text-align: left;
+
+    /* Look */
+    background: #2D1029;
+}

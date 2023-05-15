@@ -1,0 +1,10 @@
+.close-btn {
+    position: absolute;
+    top: 7px;
+    left: 9px;
+
+    /* Look */
+    border: none;
+    font-size: 35px;
+    background-color: transparent;
+}

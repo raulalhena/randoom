@@ -1,9 +1,28 @@
+/* Information & Selected Dialog */
+@import url("/styles/organisms/dialog1_inf_selected.css");
+
+/* Card Selected Dialog */
+@import url("/styles/organisms/cardselected_dialog.css");
+
+/* Customize & Create Adventure Dialog */
+@import url("/styles/organisms/dialog2_cust_creat_adventure.css");
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: #2c2c2c;
   color: white;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('fonts/Inter-Regular') format('ttf');
+}
+
+body {
+  font-family: "Inter";
 }
 
 header {
@@ -127,72 +146,7 @@ footer {
   padding: 5px;
 }
 
-dialog {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  background-image: url("/img/todas.png");
-  padding: 30px 15px 25px 15px;
-}
-
-dialog section {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-  margin: auto;
-  padding: 10px;
-}
-
-dialog section input,
-select,
-textarea {
-  width: 90%;
-  padding: 6px;
-}
-
-.close-btn {
-  position: absolute;
-  top: 7px;
-  left: 9px;
-}
-
-#tarjeta-seleccionada {
-  padding: 190px 0 0 0;
-}
-
-#tarjeta-seleccionada section {
-  width: 100%;
-  text-align: left;
-}
-
-.social-media {
-  text-align: center;
-  border: 1px solid blue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  padding: 9px 7px;
-}
-
-.social-media-btns {
-  text-align: center;
-  border: 1px solid blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.calendar-btn {
-  padding: 9px 7px;
-}
+#card-selected {}
 
 #selected-container-section {
   display: flex;
