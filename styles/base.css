@@ -17,12 +17,14 @@
 }
 
 @font-face {
-  font-family: "Inter";
+  font: Inter, sans-serif;
+  font-family: Inter, sans-serif;
   src: url('fonts/Inter-Regular') format('ttf');
 }
 
 body {
-  font-family: "Inter";
+  font: Inter, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 header {
@@ -145,8 +147,6 @@ footer {
   text-align: center;
   padding: 5px;
 }
-
-#card-selected {}
 
 #selected-container-section {
   display: flex;
