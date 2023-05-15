@@ -21,7 +21,8 @@
 }
 
 body {
-  font-family: "Inter";
+  font: Inter, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 header {
