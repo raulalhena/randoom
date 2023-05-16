@@ -23,19 +23,19 @@ for (let i = 0; i < closeButtons.length; i++) {
 //no se acá qué tenemos que poner 
 //porque este dialogo sale cuando ya selecciono una o mas tarjetas
 
-const selectedButton = //ver el botón;
-const selectedDialogue = document.getElementById("card-selected"); 
+//const selectedButton = ver el botón;
+const selectedDialogue = document.getElementById("card-selected");
 
 selectedButton[0].addEventListener("clik", () => {
-infoDialogue.show();
+  infoDialogue.show();
 });
 
 //dialogo crear tu aventura
 
-const createButton = document.getElementsByClassName("create-btn"); 
+const createButton = document.getElementsByClassName("create-btn");
 const createDialoge = document.getElementById("create-adventure");
 
-createButton[0].addEventListener("click", () =>{
+createButton[0].addEventListener("click", () => {
   createDialoge.show();
 })
 
@@ -44,11 +44,11 @@ createButton[0].addEventListener("click", () =>{
 //no se acá qué tenemos que poner 
 //porque este dialogo sale desde el editor en las tarjetas
 
-const customizeButton = //ver el botón 
+//const customizeButton = ver el botón 
 const customizeDialoge = document.getElementById("customize-adventure");
 
 customizeButton[0].addEventListener("click", () => {
-customizeDialoge.show(); 
+  customizeDialoge.show();
 })
 
 //falta el dialogo luego de mezclar 
