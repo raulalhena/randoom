@@ -1,3 +1,6 @@
+import { adventure } from "data.js";
+import { colors } from "colors.js";
+
 // dialogo información 
 
 const helpButton = document.getElementsByClassName("help-btn");
@@ -23,32 +26,31 @@ for (let i = 0; i < closeButtons.length; i++) {
 //no se acá qué tenemos que poner 
 //porque este dialogo sale cuando ya selecciono una o mas tarjetas
 
-const selectedButton = //ver el botón;
-const selectedDialogue = document.getElementById("card-selected"); 
+//const selectedButton = ver el botón;
+const selectedDialogue = document.getElementById("card-selected");
 
 selectedButton[0].addEventListener("clik", () => {
-infoDialogue.show();
+  infoDialogue.show();
 });
 
-//dialogo crear tu aventura
+//Botón CREA TU PROPIA AVENTURA 
+const createBtn = document.querySelector('.create-btn');
+const createAdventureDialog = document.querySelector('#create-adventure');
 
-const createButton = document.getElementsByClassName("create-btn"); 
-const createDialoge = document.getElementById("create-adventure");
-
-createButton[0].addEventListener("click", () =>{
-  createDialoge.show();
-})
+createBtn.addEventListener('click', () => {
+  createAdventureDialog.showModal();
+});
 
 //personaliza tu aventura
 
 //no se acá qué tenemos que poner 
 //porque este dialogo sale desde el editor en las tarjetas
 
-const customizeButton = //ver el botón 
+//const customizeButton = ver el botón 
 const customizeDialoge = document.getElementById("customize-adventure");
 
 customizeButton[0].addEventListener("click", () => {
-customizeDialoge.show(); 
+  customizeDialoge.show();
 })
 
 //falta el dialogo luego de mezclar 

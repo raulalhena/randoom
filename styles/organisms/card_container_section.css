@@ -1,4 +1,5 @@
 @import url("/styles/molecules/card_container.css");
+@import url("/styles/molecules/card_front.css");
 
 main #card-container-section {
     border: 1px solid purple;
@@ -9,3 +10,5 @@ main #card-container-section {
     align-items: center;
     flex-direction: column;
   }
+
+  

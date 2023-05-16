@@ -10,6 +10,15 @@
 /* Card Section */
 @import url("/styles/organisms/card_container_section.css");
 
+/* Header Menu */
+@import url("/styles/organisms/header_menu.css");
+
+/* Already selected adventures container */
+@import url("/styles/organisms/selected_container_section.css");
+
+/* Footer */
+@import url("/styles/organisms/footer.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +33,6 @@
 }
 
 body {
-  font: Inter, sans-serif;
   font-family: Inter, sans-serif;
 }
 
@@ -76,17 +84,9 @@ main #card-container-section {
   justify-content: center;
   align-items: center;
 }
+
 .action-btn-container {
   display: flex;
-  gap: 10px;
-}
-
-main #selected-container-section {
-  border: 1px solid green;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
   gap: 10px;
 }
 
@@ -101,25 +101,6 @@ main #selected-container-section {
   display: inline-block;
   margin-left: 15px;
   margin-bottom: 5px;
-}
-
-hr {
-  width: 90%;
-}
-
-footer {
-  border: 1px solid red;
-  text-align: center;
-  padding: 5px;
-}
-
-#selected-container-section {
-  display: flex;
-  flex-direction: column;
-}
-
-#selected-container-section ul {
-  list-style: none;
 }
 
 /* cosas geo */
@@ -140,7 +121,7 @@ footer {
 }
 
 .action-btn-container #mezclar_btn:hover {
-  color:#26B19A;
+  color: #26B19A;
   background: #F7F7F7;
 }
 
@@ -161,14 +142,8 @@ footer {
 }
 
 .action-btn-container #empezar_nuevo_btn:hover {
-  color:#943B7F;
+  color: #943B7F;
   background: #F7F7F7;
-}
-
-header button {
-  border: 1px solid black;
-  padding: 5px 10px;
-  border-radius: 50%;
 }
 
 #menu-section nav {
@@ -176,8 +151,10 @@ header button {
   overflow-x: scroll;
   white-space: nowrap;
   margin: 5px 0;
-  -ms-overflow-style: none; /* hide scrollbar on Edge and IE */
-  scrollbar-width: none; /* hide scrollbar on Firefox */
+  -ms-overflow-style: none;
+  /* hide scrollbar on Edge and IE */
+  scrollbar-width: none;
+  /* hide scrollbar on Firefox */
 }
 
 #menu-section nav button {
@@ -195,7 +172,8 @@ header button {
 }
 
 #menu-section nav::-webkit-scrollbar {
-  display: none; /* hide scrollbar on Chrome, Safari and Opera */
+  display: none;
+  /* hide scrollbar on Chrome, Safari and Opera */
 }
 
 #menu-section button {
