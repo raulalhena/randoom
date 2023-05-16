@@ -13,6 +13,12 @@
 /* Header Menu */
 @import url("/styles/organisms/header_menu.css");
 
+/* Already selected adventures container */
+@import url("/styles/organisms/selected_container_section.css");
+
+/* Footer */
+@import url("/styles/organisms/footer.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -84,15 +90,6 @@ main #card-container-section {
   gap: 10px;
 }
 
-main #selected-container-section {
-  border: 1px solid green;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  gap: 10px;
-}
-
 .selected-container {
   border: 1px solid yellow;
   height: 80%;
@@ -104,25 +101,6 @@ main #selected-container-section {
   display: inline-block;
   margin-left: 15px;
   margin-bottom: 5px;
-}
-
-hr {
-  width: 90%;
-}
-
-footer {
-  border: 1px solid red;
-  text-align: center;
-  padding: 5px;
-}
-
-#selected-container-section {
-  display: flex;
-  flex-direction: column;
-}
-
-#selected-container-section ul {
-  list-style: none;
 }
 
 /* cosas geo */
