@@ -14,7 +14,7 @@
 @import url("/styles/organisms/header_menu.css");
 
 /* Already selected adventures container */
-@import url("/styles/organisms/selected_container_section.css");
+@import url("/styles/molecules/selected_container_section.css");
 
 /* Footer */
 @import url("/styles/organisms/footer.css");

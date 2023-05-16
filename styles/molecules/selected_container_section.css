@@ -1,34 +1,17 @@
+@import url("/styles/atoms/selected_container_section-li.css");
+@import url("/styles/atoms/selected_container_section-ul.css");
+@import url("/styles/atoms/selected_container_section-title.css");
+@import url("/styles/atoms/hr.css");
+
 #selected-container-section {
     display: flex;
     flex-direction: column;
+
     background-color: #F7F7F7;
     width: 90%;
+    margin-left: 10px;
     margin-bottom: 20px;
     gap: 10px;
-  }
-
-  #selected-container-section h2 {
-    color: #7D7D7D;
-    font-size: 13px;
-  }
-  
-  
-  #selected-container-section ul {
-    list-style: none;
-    color: #7D7D7D;
-    font-size: 11px;
-    text-align: left;
-    margin-left: 12px;
-  }
-
-  
-  #selected-container-section li {
-    margin-bottom: 5px;
-  }
-   
-  
-  hr {
-    color: #ebebeb;
-    height: 1px;
-    width: 90%;
+    padding-left: 10px;
+    border: 1px solid orange;
   }
