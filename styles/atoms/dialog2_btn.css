@@ -1,0 +1,10 @@
+dialog section button {
+    width: 60%;
+    padding: 6px;
+
+    /* Look */
+    background: #26B19A;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+}

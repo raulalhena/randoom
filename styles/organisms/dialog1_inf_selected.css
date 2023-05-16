@@ -1,0 +1,15 @@
+@import url("/styles/molecules/information_section.css");
+
+dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-image: url("/img/todas.png");
+    padding: 30px 15px 25px 15px;
+
+    /* Look */
+    border-radius: 15px;
+    box-shadow: inset;
+    border: none;
+}

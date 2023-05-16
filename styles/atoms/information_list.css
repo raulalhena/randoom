@@ -1,0 +1,11 @@
+#information ul {
+    list-style: none;
+    background: #fff;
+}
+
+#information ul li {
+    list-style: none;
+    background: #fff;
+    color: #000;
+    font-weight: 200;
+}

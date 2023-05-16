@@ -1,0 +1,14 @@
+#card-selected .social-media {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 9px 7px;
+
+    /* Look */
+    border-radius: 15px;
+    border: 1px solid #fff;
+    background: #2D1029;
+}
