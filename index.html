@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap" rel="stylesheet">
   <title>RandVenture</title>
 </head>
-
 <body>
   <header>
     <img src="/img/logo.png" alt="Radventure" />
@@ -27,7 +25,7 @@
         <button>Viajes</button>
         <button>Comida</button>
       </nav>
-      <button>Añade una aventrua personalizada</button>
+      <button class="create-btn">Añade una aventrua personalizada</button>
     </section>
     <section id="card-container-section">
       <div class="card-container">
@@ -69,11 +67,11 @@
         </article>
       </div>
       <div class="action-btn-container">
-        <button>Mezclar</button>
-        <button>Empezar de nuevo</button>
+        <button id="mezclar_btn">Mezclar</button>
+        <button id="empezar">Empezar de nuevo</button>
       </div>
     </section>
-
+    
     <hr>
 
     <section id="selected-container-section">
@@ -82,22 +80,46 @@
         <li>
           <article class="card-done">
             <p>Travel to himalya</p>
-          </article>
-        </li>
-        <li>
-          <article class="card-done">
-            <p>Travel to himalya</p>
-          </article>
-        </li>
-      </ul>
-    </section>
+           </article>
+          </li>
+          <li>
+            <article class="card-done">
+              <p>Travel to himalya</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  </main>
+    <footer>All rights reserved ®</footer>
 
-  <footer>All rights reserved ®</footer>
+    <!--personalizar aventura-->
+    <dialog id="customize-adventure">
+      <button class="close-btn">&times;</button>
+      <section>
+        <h2>Personaliza la aventura</h2>
+        <select name="categories" id="categories">
+          <option value="">Categorias</option>
+          <option value="">Legado</option>
+          <option value="">Adrenalina</option>
+          <option value="">Cultura</option>
+          <option value="">Viajes</option>
+          <option value="">Comida</option>
+        </select>
+        <input type="text" placeholder="Título" />
+        <textarea
+          name="description"
+          id=""
+          cols="30"
+          rows="5"
+          placeholder="Descripcion"
+        ></textarea>
+        <button>Guardar</button>
+      </section>
+    </dialog>
 
   <!--personalizar aventura-->
-  <dialog open id="customize-adventure">
+  <dialog id="customize-adventure">
     <button class="close-btn">&times;</button>
     <section>
       <h2>Personaliza la aventura</h2>
@@ -114,70 +136,76 @@
       <button>Guardar</button>
     </section>
   </dialog>
+    <!--crear tu aventura-->
+    <dialog id="create-adventure">
+      <button class="close-btn">&times;</button>
+      <section>
+        <h2>¡Añade tu nueva aventura!</h2>
+        <select name="categories" id="categories">
+          <option value="">Categorias</option>
+          <option value="">Legado</option>
+          <option value="">Adrenalina</option>
+          <option value="">Cultura</option>
+          <option value="">Viajes</option>
+          <option value="">Comida</option>
+        </select>
+        <input type="text" placeholder="Título" />
+        <textarea
+          name="description"
+          id=""
+          cols="30"
+          rows="5"
+          placeholder="Descripcion"
+        ></textarea>
+        <button>Añadir</button>
+      </section>
+    </dialog>
 
-  <!--crear tu aventura-->
-  <dialog id="create-adventure">
-    <button class="close-btn">&times;</button>
-    <section>
-      <h2>¡Añade tu nueva aventura!</h2>
-      <select name="categories" id="categories">
-        <option value="">Categorias</option>
-        <option value="">Legado</option>
-        <option value="">Adrenalina</option>
-        <option value="">Cultura</option>
-        <option value="">Viajes</option>
-        <option value="">Comida</option>
-      </select>
-      <input type="text" placeholder="Título" />
-      <textarea name="description" id="" cols="30" rows="5" placeholder="Descripcion"></textarea>
-      <button>Añadir</button>
-    </section>
-  </dialog>
-
-  <!--aventura seleccionada-->
-  <dialog id="card-selected">
-    <button class="close-btn">&times;</button>
-    <section>
-      <div>
-        <h2>SOPA DE MELÓN</h2>
-        <p>
-          Una sopa fría hecha con melón fresco, yogur, menta y un toque de
-          limón. Es refrescante y sorprendentemente deliciosa.
-        </p>
-      </div>
-      <div class="social-media">
-        <h3>Comparte tu aventura</h3>
-        <div class="social-media-btns">
-          <a href="#"><img src="/img/instagram.png" alt="Instagram"></i></a>
-          <a href="#"><img src="/img/facebook.png" alt="Facebook"></i></a>
-          <a href="#"><img src="/img/twitter.png" alt="Twitter"></i></a>
+    <!--aventura seleccionada-->
+    <dialog id="card-selected">
+      <button class="close-btn">&times;</button>
+      <section>
+        <div>
+          <h2>SOPA DE MELÓN</h2>
+          <p>
+            Una sopa fría hecha con melón fresco, yogur, menta y un toque de
+            limón. Es refrescante y sorprendentemente deliciosa.
+          </p>
         </div>
-      </div>
-      <button class="calendar-btn">Agenda tu aventura <img src="/img/calendar.png" alt="Calendar"></button>
-    </section>
-  </dialog>
+        <div class="social-media">
+          <h3>Comparte tu aventura</h3>
+          <div class="social-media-btns">
+            <a href="#"><img src="/img/instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="/img/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="/img/twitter.png" alt="Twitter" /></a>
+          </div>
+        </div>
+        <button class="calendar-btn">
+          Agenda tu aventura <img src="/img/calendar.png" alt="Calendar" />
+        </button>
+      </section>
+    </dialog>
 
-  <!--dialogo luego de mezclar-->
-  <dialog>
-    <h2>¡Es hora de elegir tu aventura!</h2>
-  </dialog>
+    <!--dialogo luego de mezclar-->
+    <dialog>
+      <h2>¡Es hora de elegir tu aventura!</h2>
+    </dialog>
 
-  <!--información-->
-  <dialog id="information">
-    <button class="close-btn">&times;</button>
-    <section>
-      <h2>DESCUBRE EL EMOCIONANTE CAOS DE LA AVENTURA</h2>
-      <ul>
-        <li>Escoge una categoria</li>
-        <li>Edita o crea tu propia aventura</li>
-        <li>Mezcla las cartas</li>
-        <li>Elige una de ellas</li>
-      </ul>
-      <h3>¡Cada partida es una nueva aventura, cada elección cuenta!</h3>
-    </section>
-  </dialog>
+    <!--información-->
+    <dialog id="information">
+      <button class="close-btn">&times;</button>
+      <section>
+        <h2>DESCUBRE EL EMOCIONANTE CAOS DE LA AVENTURA</h2>
+        <ul>
+          <li>Escoge una categoria</li>
+          <li>Edita o crea tu propia aventura</li>
+          <li>Mezcla las cartas</li>
+          <li>Elige una de ellas</li>
+        </ul>
+        <h3>¡Cada partida es una nueva aventura, cada elección cuenta!</h3>
+      </section>
+    </dialog>
 
-  <script src="/js/app.js"></script>
-</body>
-
+    <script src="/js/app.js"></script>
+  </body>
 </html>

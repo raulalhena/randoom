@@ -1,0 +1,20 @@
+.action-btn-container #empezar_nuevo_btn {
+    width: 127px;
+    height: 36px;
+
+    background: #943B7F;
+    box-shadow: 0px 2px 6px #DADADA;
+    border-radius: 10px;
+    cursor:pointer;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+     font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #F7F7F7;
+}
+.action-btn-container #empezar_nuevo_btn:hover {
+    color:#943B7F;
+    background: #F7F7F7;
+}
