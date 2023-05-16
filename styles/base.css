@@ -11,7 +11,7 @@
 @import url("/styles/organisms/card_container_section.css");
 
 /* Header Menu */
-@import url("/styles/base.css");
+@import url("/styles/organisms/header_menu.css");
 
 * {
   margin: 0;
@@ -27,7 +27,6 @@
 }
 
 body {
-  font: Inter, sans-serif;
   font-family: Inter, sans-serif;
 }
 
