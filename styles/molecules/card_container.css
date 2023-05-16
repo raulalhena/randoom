@@ -1,0 +1,15 @@
+
+@import url("/styles/molecules/card.css");
+@import url("/styles/atoms/mezclar_btn.css");
+@import url("/styles/atoms/empezar_nuevo_btn.css");
+
+
+.card-container {
+    border: 1px solid red;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
