@@ -1,0 +1,17 @@
+@import url("/styles/atoms/edit_btn.css");
+@import url("/styles/atoms/card_front_title.css");
+
+.card-front {
+    border: 1px solid rgb(255, 145, 0);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 10;
+}

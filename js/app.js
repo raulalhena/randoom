@@ -33,14 +33,13 @@ selectedButton[0].addEventListener("clik", () => {
   infoDialogue.show();
 });
 
-//dialogo crear tu aventura
+//Botón CREA TU PROPIA AVENTURA 
+const createBtn = document.querySelector('.create-btn');
+const createAdventureDialog = document.querySelector('#create-adventure');
 
-const createButton = document.getElementsByClassName("create-btn");
-const createDialoge = document.getElementById("create-adventure");
-
-createButton[0].addEventListener("click", () => {
-  createDialoge.show();
-})
+createBtn.addEventListener('click', () => {
+  createAdventureDialog.showModal();
+});
 
 //personaliza tu aventura
 
