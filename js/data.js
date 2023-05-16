@@ -1,4 +1,4 @@
-const adventures = [
+export const adventures = [
     {
         id: "1",
         name: "sopa de caracol",
