@@ -1,6 +1,3 @@
-import { adventure } from "data.js";
-import { colors } from "colors.js";
-
 // dialogo información 
 
 const helpButton = document.getElementsByClassName("help-btn");

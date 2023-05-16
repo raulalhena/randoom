@@ -21,6 +21,5 @@ const showCards = (userAdventures) => {
 
 window.addEventListener("load", showCards(selectCategory(shuffledAdventures, checkCategory())));
 
-// window.addEventListener("load", checkCategory());
 
 
