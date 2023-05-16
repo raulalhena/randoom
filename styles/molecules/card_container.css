@@ -1,7 +1,5 @@
 
-@import url("/styles/molecules/card.css");
-@import url("/styles/atoms/mezclar_btn.css");
-@import url("/styles/atoms/empezar_nuevo_btn.css");
+@import url("/styles/molecules/card_front.css");
 
 
 .card-container {
