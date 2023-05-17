@@ -28,9 +28,9 @@
       <nav>
         <button>Todas</button>
         <button>Legado</button>
-        <button autofocus>Adrenalina</button>
+        <button>Adrenalina</button>
         <button>Cultura</button>
-        <button>Viajes</button>
+        <button autofocus>Viajes</button>
         <button>Comida</button>
       </nav>
       <button class="create-btn">Crea tu propia aventura</button>
@@ -41,8 +41,7 @@
     <!-- **************************************************************** -->
     <section id="card-container-section">
       <div class="card-container">
-        <article>
-          <img src="/img/todas.png" alt="Travel to himalaya" />
+        <!-- <article>
           <div class="card-front">
             <h3>SOPA DE MELÓN</h2>
               <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
@@ -82,7 +81,7 @@
             <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
           </article>
           <article class="card-back">
-          </article>
+          </article> -->
       </div>
 
       <!-- ******************************************************** -->
@@ -115,14 +114,18 @@
     </section>
   </main>
 
+  <!-- ****** -->
   <!-- Footer -->
+  <!-- ****** -->
   <footer>All rights reserved ®</footer>
 
-  <!-- ******* -->
-  <!-- DIALOGS -->
-  <!-- ******* -->
+  <!-- ********************************* -->
+  <!--              DIALOGS              -->
+  <!-- ********************************* -->
 
-  <!--personalizar aventura-->
+  <!-- ********************* -->
+  <!-- Personalizar aventura -->
+  <!-- ********************* -->
   <dialog id="customize-adventure">
     <button class="close-btn">&times;</button>
     <section>
@@ -141,7 +144,9 @@
     </section>
   </dialog>
 
-  <!--crear tu aventura-->
+  <!-- ************** -->
+  <!-- Crear aventura -->
+  <!-- ************** -->
   <dialog id="create-adventure">
     <button class="close-btn">&times;</button>
     <section>
@@ -160,7 +165,9 @@
     </section>
   </dialog>
 
-  <!--aventura seleccionada-->
+  <!-- ********************* -->
+  <!-- Aventura seleccionada -->
+  <!-- ********************* -->
   <dialog id="card-selected">
     <button class="close-btn">&times;</button>
     <section>
@@ -185,13 +192,16 @@
     </section>
   </dialog>
 
-
-  <!--dialogo luego de mezclar-->
+  <!-- ******************************* -->
+  <!-- Mensaje de seleccionar aventura -->
+  <!-- ******************************* -->
   <dialog>
     <h2>¡Es hora de elegir tu aventura!</h2>
   </dialog>
 
-  <!--información-->
+  <!-- *************************************** -->
+  <!-- Cuadro de información con instrucciones -->
+  <!-- *************************************** -->
   <dialog id="information">
     <button class="close-btn">&times;</button>
     <section>
@@ -206,9 +216,12 @@
     </section>
   </dialog>
 
+  <!-- ****************** -->
+  <!-- SCRIPTS JAVASCRIPT -->
+  <!-- ****************** -->
   <script src="/js/app.js" type="module" defer></script>
   <script src="/js/showCards.js" type="module" defer></script>
-  <script src="./js/sounds.js"></script>
+  <!-- <script src="./js/sounds.js"></script> -->
 </body>
 
 </html>

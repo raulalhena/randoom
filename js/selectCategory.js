@@ -10,6 +10,7 @@ export const selectCategory = (shuffledAdventures, category) => {
         const adventuresByCategory = shuffledAdventures.filter(adventure => {
             return adventure.category === category;
         });
+
         return adventuresByCategory;
     }
 
