@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="/styles/base.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
       <nav>
         <button>Todas</button>
         <button>Legado</button>
-        <button>Adrenalina</button>
+        <button autofocus>Adrenalina</button>
         <button>Cultura</button>
         <button>Viajes</button>
         <button>Comida</button>
@@ -144,30 +144,25 @@
 
     <footer>All rights reserved ®</footer
 
-    <!--personalizar aventura-->
-    <dialog id="customize-adventure">
-      <button class="close-btn">&times;</button>
-      <section>
-        <h2>Personaliza la aventura</h2>
-        <select name="categories" id="categories">
-          <option value="">Categorias</option>
-          <option value="">Legado</option>
-          <option value="">Adrenalina</option>
-          <option value="">Cultura</option>
-          <option value="">Viajes</option>
-          <option value="">Comida</option>
-        </select>
-        <input type="text" placeholder="Título" />
-        <textarea
-          name="description"
-          id=""
-          cols="30"
-          rows="5"
-          placeholder="Descripcion"
-        ></textarea>
-        <button>Guardar</button>
-      </section>
-    </dialog>
+
+  <!--personalizar aventura-->
+  <dialog id="customize-adventure">
+    <button class="close-btn">&times;</button>
+    <section>
+      <h2>Personaliza la aventura</h2>
+      <select name="categories" id="categories">
+        <option value="">Categorias</option>
+        <option value="">Legado</option>
+        <option value="">Adrenalina</option>
+        <option value="">Cultura</option>
+        <option value="">Viajes</option>
+        <option value="">Comida</option>
+      </select>
+      <input type="text" placeholder="Título" />
+      <textarea name="description" id="" cols="30" rows="5" placeholder="Descripcion"></textarea>
+      <button>Guardar</button>
+    </section>
+  </dialog>
    
   <!--crear tu aventura-->
   <dialog id="create-adventure">
@@ -233,7 +228,10 @@
       <h3>¡Cada partida es una nueva aventura, cada elección cuenta!</h3>
     </section>
   </dialog>
+
+  <script src="/js/app.js" type="module" defer></script>
+  <script src="/js/showCards.js" type="module" defer></script>
   <script src="./js/sounds.js"></script>
-  <script src="/js/app.js" type="module"></script>
   </body>
 </html>
+

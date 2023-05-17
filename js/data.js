@@ -24,12 +24,4 @@ const adventures = [
         selected: true,
         completed: true
     },
-    {
-        id: generarId(),
-        name: "Vuelo en globo aerostático",
-        description: "Aventura en la región de Monsteny (a 30min de Barcelona), podréis descubrir desde los aires panoramas y paisajes impresionantes",
-        category: "viajes",
-        selected: true,
-        completed: true
-    },
 ]
