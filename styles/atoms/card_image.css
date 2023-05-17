@@ -1,4 +1,8 @@
 article img {
     width: 100%;
-    opacity:0.5;
+    opacity:0.3;
+}
+article img:hover {
+
+    opacity:0.4;
 }
