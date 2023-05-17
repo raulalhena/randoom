@@ -1,7 +1,8 @@
 .card-front h3 {
-    font-size: 22px;
+    font-size: 15px;
     background-color: transparent;
+    color: white;
     padding: 10px;
-    text-stroke: 3px black; /* no me está funcionando */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
   }

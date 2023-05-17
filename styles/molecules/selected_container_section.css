@@ -6,8 +6,6 @@
 #selected-container-section {
     display: flex;
     flex-direction: column;
-
-    background-color: #F7F7F7;
     width: 90%;
     margin-left: 10px;
     margin-bottom: 20px;

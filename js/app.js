@@ -37,4 +37,5 @@ createBtn.addEventListener('click', () => {
 //   customizeAdventureDialog.showModal();
 // });
 
+
 addLogoToCard();
