@@ -30,7 +30,7 @@ createBtn.addEventListener('click', () => {
 
 
 //Botón PERSONALIZA la aventura
-const editBtn = document.getElementById('edit-btn');
+const editButton = document.getElementById('edit-btn');
 const customizeAdventureDialog = document.getElementById('customize-adventure');
 
 
