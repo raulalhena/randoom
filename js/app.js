@@ -20,22 +20,4 @@ for (let i = 0; i < closeButtons.length; i++) {
   });
 }
 
-//Botón CREA tu propia aventura 
-const createBtn = document.querySelector('.create-btn');
-const createAdventureDialog = document.querySelector('#create-adventure');
-
-createBtn.addEventListener('click', () => {
-  createAdventureDialog.showModal();
-});
-
-
-//Botón PERSONALIZA la aventura
-const editButton = document.getElementById('edit-btn');
-const customizeAdventureDialog = document.getElementById('customize-adventure');
-
-
-editButton.addEventListener('click', function () {
-  customizeAdventureDialog.showModal();
-});
-
 addLogoToCard();
