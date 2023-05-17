@@ -1,4 +1,4 @@
-import { addLogoToImages } from "./shuffle.js";
+import { addLogoToCard } from "./shuffle.js";
 
 // dialogo información
 
@@ -55,4 +55,4 @@ const customizeDialoge = document.getElementById("customize-adventure");
 
 //falta el dialogo luego de mezclar
 
-addLogoToImages();
+addLogoToCard();

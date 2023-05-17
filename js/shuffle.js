@@ -1,14 +1,14 @@
-export function addLogoToImages() {
+export function addLogoToCard() {
   const articleElements = document.querySelectorAll(
     "#card-container-section .card-container article"
   );
 
   articleElements.forEach((article) => {
-    const imgElement = document.createElement("img");
-    imgElement.className = "logo-mezclar";
-    imgElement.src = "/img/logoR.png";
-    imgElement.alt = "logo";
-    article.appendChild(imgElement);
+    article.innerHTML += `
+      <img class="logo-mezclar" src="/img/logoR.png" alt="logo" />
+    `;
+
+    const imgElement = article.querySelector(".logo-mezclar");
 
     const intervalId = setInterval(() => {
       const randomColor = getRandomHexColor();

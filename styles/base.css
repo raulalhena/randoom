@@ -154,8 +154,8 @@ main #card-container-section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px;
+  padding: 40px;
   width: 40%;
-  height: 20%;
+  height: 40%;
   border-radius: 50%;
 }
