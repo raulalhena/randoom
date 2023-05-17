@@ -33,7 +33,8 @@ selectedButton[0].addEventListener("clik", () => {
   infoDialogue.show();
 });
 
-//Botón CREA TU PROPIA AVENTURA 
+
+//Botón CREA tu propia aventura 
 const createBtn = document.querySelector('.create-btn');
 const createAdventureDialog = document.querySelector('#create-adventure');
 
@@ -41,7 +42,15 @@ createBtn.addEventListener('click', () => {
   createAdventureDialog.showModal();
 });
 
-//personaliza tu aventura
+
+//Botón PERSONALIZA la aventura
+const editButton = document.getElementById('edit-btn');
+const customizeAdventureDialog = document.getElementById('customize-adventure');
+
+editButton.addEventListener('click', function() {
+  customizeAdventureDialog.showModal();
+});
+
 
 //no se acá qué tenemos que poner 
 //porque este dialogo sale desde el editor en las tarjetas
