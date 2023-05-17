@@ -2,6 +2,6 @@
     font-size: 22px;
     background-color: transparent;
     padding: 10px;
-    text-stroke: 3px black; /* no me está funcionando */
+   text-stroke: 3px black; /* no me está funcionando */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
