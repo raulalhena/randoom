@@ -1,7 +1,6 @@
-
-@import url("/styles/molecules/card_front.css");
+/* @import url("/styles/molecules/card_front.css");
 @import url("/styles/molecules/card_back.css");
-
+ */
 
 .card-container {
     border: 1px solid rgb(29, 226, 62);

@@ -15,25 +15,39 @@ const removeAllChilds = (parent) => {
     });
 }
 
+const flipCards = (parent) => {
+    parent.querySelectorAll("article").forEach(child => {
+        child.classList.toggle(`card-front`);
+        child.classList.toggle(`card-back`);
+    });
+}
+
 const showCards = (userAdventures) => {
-    removeAllChilds(cardContainer);
 
     // Crea 12 elementos article dentro del elemento card-container
     for (let i = 0; i < 12; i++) {
-        // alert(userAdventures[i].name)
         const child = cardContainer.appendChild(document.createElement("article"));
-        child.classList.add(`card-front`, `card_${userAdventures[i].category}_img`);
+        child.classList.add(`card-front`);
+        child.classList.add(`card_${userAdventures[i].category}_img`);
         child.innerHTML = `<h3>${userAdventures[i].name}</h3><a href='#' id='edit-btn'><img src='/img/edit.png' alt='Modificar aventura' /></a>`;
     }
 
 }
 
-window.addEventListener("load", showCards(selectCategory(shuffle(adventures), checkCategory())));
+window.addEventListener("load", () => {
+    removeAllChilds(cardContainer);
+    showCards(selectCategory(shuffle(adventures), checkCategory()), "front")
+});
 
 const shuffleBtn = document.getElementById("mezclar_btn");
 
 shuffleBtn.addEventListener("click", () => {
-    showCards(selectCategory(shuffle(adventures), checkCategory()))
+    // Dar vuelta a las cartas
+    // Cambiar de color circulo del dorso
+    // Sonido de barajar
+    // Mostrar mensaje de elegir carta
+    flipCards(cardContainer);
+    // showCards(selectCategory(shuffle(adventures), checkCategory()))
 });
 
 

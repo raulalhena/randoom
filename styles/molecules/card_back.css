@@ -1,4 +1,3 @@
-
 .card-back {
     display: flex;
     flex-direction: column;
@@ -13,18 +12,33 @@
     width: 100%;
 }
 
+.card-back h3 {
+    display: none;
+}
+
+.card-back a {
+    display: none;
+}
+
+#edit-btn {
+    display: none;
+}
+
+#edit-btn img {
+    display: none;
+}
 
 .back_legado_img {
     background-image: url(/img/legado.jpg);
-} 
+}
 
 .back_comida_img {
     background-image: url(/img/comida.jpg);
-} 
+}
 
 .back_adrenalina_img {
     background-image: url(/img/adrenalina.jpg);
-} 
+}
 
 .back_cultura_img {
     background-image: url(/img/cultura.jpg);
