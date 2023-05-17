@@ -17,7 +17,7 @@
 @import url("/styles/organisms/nav.css");
 
 /* Already selected adventures container */
-@import url("/styles/organisms/selected_container_section.css");
+@import url("/styles/molecules/selected_container_section.css");
 
 /* Footer */
 @import url("/styles/organisms/footer.css");
@@ -27,7 +27,7 @@
   padding: 0;
   box-sizing: border-box;
   background: #2c2c2c;
-  color: white;
+  color: white; 
 }
 
 @font-face {
@@ -79,20 +79,6 @@ main #menu-section {
   align-items: center;
 }
 
-main #card-container-section {
-  border: 1px solid purple;
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.action-btn-container {
-  display: flex;
-  gap: 10px;
-}
-
 .selected-container {
   border: 1px solid yellow;
   height: 80%;
@@ -104,49 +90,6 @@ main #card-container-section {
   display: inline-block;
   margin-left: 15px;
   margin-bottom: 5px;
-}
-
-/* cosas geo */
-.action-btn-container #mezclar_btn {
-  width: 66px;
-  height: 36px;
-
-  background: #26b19a;
-  box-shadow: 0px 2px 6px #d9d9d9;
-  border-radius: 10px;
-
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  color: #f7f7f7;
-}
-
-.action-btn-container #mezclar_btn:hover {
-  color: #26b19a;
-  background: #f7f7f7;
-}
-
-.action-btn-container #empezar_nuevo_btn {
-  width: 127px;
-  height: 36px;
-
-  background: #943b7f;
-  box-shadow: 0px 2px 6px #dadada;
-  border-radius: 10px;
-
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  color: #f7f7f7;
-}
-
-.action-btn-container #empezar_nuevo_btn:hover {
-  color: #943b7f;
-  background: #f7f7f7;
 }
 
 .logo-mezclar {
