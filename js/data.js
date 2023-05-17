@@ -1,10 +1,10 @@
 //generador de id
-function generarId(){
-    let a = Date.now().toString(30); 
-    let b = Math.random().toString(30).substring(2); 
-    return a + b; 
+function generarId() {
+    let a = Date.now().toString(30);
+    let b = Math.random().toString(30).substring(2);
+    return a + b;
 }
-const id = generarId(); 
+const id = generarId();
 
 //adventures: viajes, adrenalina
 const adventures = [
@@ -13,13 +13,13 @@ const adventures = [
         name: "Viajar a la Isla Sentinel",
         description: "Isla ubicada en las islas Andamán, dónde vive una de las tirbus más aisladas y peligrosas del mundo",
         category: "viajes",
-        selected: true,
-        completed: true
+        selected: false,
+        completed: false
     },
     {
         id: generarId(),
         name: "Vuelo en globo aerostático",
-        description: "Aventura en la región de Monsteny (a 30min de Barcelona), podréis descubrir desde los aires panoramas y paisajes impresionantes", 
+        description: "Aventura en la región de Monsteny (a 30min de Barcelona), podréis descubrir desde los aires panoramas y paisajes impresionantes",
         category: "viajes",
         selected: true,
         completed: true
@@ -27,7 +27,7 @@ const adventures = [
     {
         id: generarId(),
         name: "Vuelo en globo aerostático",
-        description: "Aventura en la región de Monsteny (a 30min de Barcelona), podréis descubrir desde los aires panoramas y paisajes impresionantes", 
+        description: "Aventura en la región de Monsteny (a 30min de Barcelona), podréis descubrir desde los aires panoramas y paisajes impresionantes",
         category: "viajes",
         selected: true,
         completed: true

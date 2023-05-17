@@ -44,7 +44,7 @@ createBtn.addEventListener('click', () => {
 const editButton = document.getElementById('edit-btn');
 const customizeAdventureDialog = document.getElementById('customize-adventure');
 
-editButton.addEventListener('click', function() {
+editButton.addEventListener('click', function () {
   customizeAdventureDialog.showModal();
 });
 
