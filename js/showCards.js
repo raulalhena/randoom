@@ -21,5 +21,11 @@ const showCards = (userAdventures) => {
 
 window.addEventListener("load", showCards(selectCategory(shuffledAdventures, checkCategory())));
 
+const shuffleBtn = document.getElementById("mezclar_btn");
+
+shuffleBtn.addEventListener("click", () => {
+    showCards(selectCategory(shuffledAdventures, checkCategory()))
+});
+
 
 
