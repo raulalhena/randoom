@@ -1,5 +1,4 @@
 // dialogo información 
-
 const helpButton = document.getElementsByClassName("help-btn");
 const infoDialogue = document.getElementById("information");
 const closeButtons = document.getElementsByClassName("close-btn");
@@ -41,10 +40,10 @@ createBtn.addEventListener('click', () => {
 
 
 //Botón PERSONALIZA la aventura
-const editButton = document.getElementById('edit-btn');
+const editBtn = document.getElementById('edit-btn');
 const customizeAdventureDialog = document.getElementById('customize-adventure');
 
-editButton.addEventListener('click', function() {
+editBtn.addEventListener('click', () => {
   customizeAdventureDialog.showModal();
 });
 
