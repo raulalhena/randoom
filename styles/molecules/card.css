@@ -1,10 +1,12 @@
 @import url("/styles/atoms/card_image.css");
-/* 
 @import url("/styles/atoms/card_title.css");
 @import url("/styles/atoms/edit_btn.css"); 
-*/
+
+
+
 
 article {
+   border: 1px solid rgb(102, 199, 46);
     height: 100%;
     display: flex;
     flex-direction: column;
