@@ -1,0 +1,13 @@
+#menu-section nav button {
+  background-color: #d9d9d9;
+  color: black;
+  padding: 10px 7px;
+  border: none;
+  border-radius: 16px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+#menu-section nav button:focus {
+  background-color: #26b19a;
+}

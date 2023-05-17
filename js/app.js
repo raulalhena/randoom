@@ -1,4 +1,8 @@
-// dialogo información 
+
+import { addLogoToCard } from "./shuffle.js";
+
+// dialogo información
+
 
 const helpButton = document.getElementsByClassName("help-btn");
 const infoDialogue = document.getElementById("information");
@@ -20,7 +24,7 @@ for (let i = 0; i < closeButtons.length; i++) {
 
 //dialogo aventura seleccionada
 
-//no se acá qué tenemos que poner 
+//no se acá qué tenemos que poner
 //porque este dialogo sale cuando ya selecciono una o mas tarjetas
 
 // //const selectedButton = ver el botón;
@@ -29,6 +33,7 @@ for (let i = 0; i < closeButtons.length; i++) {
 // selectedButton[0].addEventListener("clik", () => {
 //   infoDialogue.show();
 // });
+
 
 
 //Botón CREA tu propia aventura 
@@ -40,6 +45,7 @@ createBtn.addEventListener('click', () => {
 });
 
 
+
 //Botón PERSONALIZA la aventura
 const editButton = document.getElementById('edit-btn');
 const customizeAdventureDialog = document.getElementById('customize-adventure');
@@ -49,7 +55,7 @@ editButton.addEventListener('click', function () {
 });
 
 
-//no se acá qué tenemos que poner 
+//no se acá qué tenemos que poner
 //porque este dialogo sale desde el editor en las tarjetas
 
 // //const customizeButton = ver el botón 
@@ -59,4 +65,4 @@ editButton.addEventListener('click', function () {
 //   customizeDialoge.show();
 // })
 
-//falta el dialogo luego de mezclar 
+addLogoToCard();
