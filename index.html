@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="/styles/base.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
       <nav>
         <button>Todas</button>
         <button>Legado</button>
-        <button>Adrenalina</button>
+        <button autofocus>Adrenalina</button>
         <button>Cultura</button>
         <button>Viajes</button>
         <button>Comida</button>
@@ -119,31 +119,31 @@
       </div>
 
       <div class="action-btn-container">
-        <button id="mezclar_btn">Mezclar</button>
-        <button id="empezar">Empezar de nuevo</button>
+        <button id="mezclar_btn" onclick="reproducirSonidoMezclar()">Mezclar</button>
+        <button id="empezar_nuevo_btn">Empezar de nuevo</button>
       </div>
     </section>
+      <hr/>
+      <section id="selected-container-section">
+        <h2>¡Te has animado a todo esto!</h2>
+        <ul>
+          <li>
+            <article class="card-done">
+              <p>Travel to himalya</p>
+            </article>
+          </li>
+          <li>
+            <article class="card-done">
+              <p>Travel to himalya</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-    <hr>
 
-    <section id="selected-container-section">
-      <h2>¡Te has animado a todo esto!</h2>
-      <ul>
-        <li>
-          <article class="card-done">
-            <p>Travel to himalya</p>
-          </article>
-        </li>
-        <li>
-          <article class="card-done">
-            <p>Travel to himalya</p>
-          </article>
-        </li>
-      </ul>
-    </section>
-  </main>
+    <footer>All rights reserved ®</footer
 
-  <footer>All rights reserved ®</footer>
 
   <!--personalizar aventura-->
   <dialog id="customize-adventure">
@@ -163,7 +163,7 @@
       <button>Guardar</button>
     </section>
   </dialog>
-
+   
   <!--crear tu aventura-->
   <dialog id="create-adventure">
     <button class="close-btn">&times;</button>
@@ -183,37 +183,37 @@
     </section>
   </dialog>
 
-
-  <!--aventura seleccionada-->
-  <dialog id="card-selected">
-    <button class="close-btn">&times;</button>
-    <section>
-      <div>
-        <h2>SOPA DE MELÓN</h2>
-        <p>
-          Una sopa fría hecha con melón fresco, yogur, menta y un toque de
-          limón. Es refrescante y sorprendentemente deliciosa.
-        </p>
-      </div>
-      <div class="social-media">
-        <h3>Comparte tu aventura</h3>
-        <div class="social-media-btns">
-          <a href="#"><img src="/img/instagram.png" alt="Instagram" /></a>
-          <a href="#"><img src="/img/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="/img/twitter.png" alt="Twitter" /></a>
+    <!--aventura seleccionada-->
+    <dialog id="card-selected">
+      <button class="close-btn">&times;</button>
+      <section>
+        <div>
+          <h2>SOPA DE MELÓN</h2>
+          <p>
+            Una sopa fría hecha con melón fresco, yogur, menta y un toque de
+            limón. Es refrescante y sorprendentemente deliciosa.
+          </p>
         </div>
-      </div>
-      <button class="calendar-btn">
-        Agenda tu aventura <img src="/img/calendar.png" alt="Calendar" />
-      </button>
-    </section>
-  </dialog>
+        <div class="social-media">
+          <h3>Comparte tu aventura</h3>
+          <div class="social-media-btns">
+            <a href="#"><img src="/img/instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="/img/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="/img/twitter.png" alt="Twitter" /></a>
+          </div>
+        </div>
+        <button class="calendar-btn">
+          Agenda tu aventura <img src="/img/calendar.png" alt="Calendar" />
+        </button>
+      </section>
+    </dialog>
 
-  <!--dialogo luego de mezclar-->
-  <dialog>
-    <h2>¡Es hora de elegir tu aventura!</h2>
-  </dialog>
 
+    <!--dialogo luego de mezclar-->
+    <dialog>
+      <h2>¡Es hora de elegir tu aventura!</h2>
+    </dialog>
+      
   <!--información-->
   <dialog id="information">
     <button class="close-btn">&times;</button>
@@ -229,8 +229,9 @@
     </section>
   </dialog>
 
-  <script src="/js/app.js" type="module"></script>
-  
-</body>
-
+  <script src="/js/app.js" type="module" defer></script>
+  <script src="/js/showCards.js" type="module" defer></script>
+  <script src="./js/sounds.js"></script>
+  </body>
 </html>
+
