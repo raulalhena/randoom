@@ -1,98 +1,28 @@
-export const adventures = [
+//generador de id
+function generarId(){
+    let a = Date.now().toString(30); 
+    let b = Math.random().toString(30).substring(2); 
+    return a + b; 
+}
+const id = generarId(); 
+
+//adventures: viajes, adrenalina
+const adventures = [
     {
-        id: "1",
-        name: "sopa de caracol",
-        description: "sdf;sakfjas;dkf",
-        category: "comida",
+        id: generarId(),
+        name: "Viajar a la Isla Sentinel",
+        description: "Isla ubicada en las islas Andamán, dónde vive una de las tirbus más aisladas y peligrosas del mundo",
+        category: "viajes",
         selected: true,
         completed: true
     },
     {
-        id: "2",
-        name: "base jumping",
-        description: "sdf;sakfjas;dkf",
-        category: "viaje",
+
+        id: generarId(),
+        name: "Vuelo en globo aerostático",
+        description: "Aventura en la región de Monsteny (a 30min de Barcelona), podréis descubrir desde los aires panoramas y paisajes impresionantes", 
+        category: "viajes",
         selected: true,
         completed: true
-    },
-    {
-        id: "3",
-        name: "Legado",
-        description: "sdf;sakfjas;dkf",
-        category: "legado",
-        selected: true,
-        completed: true
-    },
-    {
-        id: "4",
-        name: "base jumping",
-        description: "sdf;sakfjas;dkf",
-        category: "cultura",
-        selected: true,
-        completed: true
-    },
-    {
-        id: "5",
-        name: "sopa de caracol",
-        description: "sdf;sakfjas;dkf",
-        category: "comida",
-        selected: true,
-        completed: true
-    },
-    {
-        id: "6",
-        name: "base jumping",
-        description: "sdf;sakfjas;dkf",
-        category: "adrenalina",
-        selected: true,
-        completed: true
-    },
-    {
-        id: "7",
-        name: "sopa de caracol",
-        description: "sdf;sakfjas;dkf",
-        category: "viaje",
-        selected: true,
-        completed: true
-    },
-    {
-        id: "8",
-        name: "base jumping",
-        description: "sdf;sakfjas;dkf",
-        category: "viaje",
-        selected: true,
-        completed: true
-    },
-    {
-        id: "9",
-        name: "sopa de caracol",
-        description: "sdf;sakfjas;dkf",
-        category: "adrenalina",
-        selected: true,
-        completed: true
-    },
-    {
-        id: "10",
-        name: "base jumping",
-        description: "sdf;sakfjas;dkf",
-        category: "viaje",
-        selected: true,
-        completed: true
-    },
-    {
-        id: "11",
-        name: "sopa de caracol",
-        description: "sdf;sakfjas;dkf",
-        category: "cultura",
-        selected: true,
-        completed: true
-    },
-    {
-        id: "12",
-        name: "base jumping",
-        description: "sdf;sakfjas;dkf",
-        category: "viaje",
-        selected: true,
-        completed: true
-    },
+    }
 ]

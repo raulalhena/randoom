@@ -27,38 +27,123 @@
         <button>Viajes</button>
         <button>Comida</button>
       </nav>
-      <button class="create-btn">Añade una aventrua personalizada</button>
+      <button class="create-btn">Crea tu propia aventura</button>
     </section>
+
     <section id="card-container-section">
       <div class="card-container">
-
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
+        <article>
+          <img src="/img/todas.png" alt="Travel to himalaya" />
+          <div class="card-front">
+            <h3>SOPA DE MELÓN</h2>
+              <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
+          </div>
+        </article>
       </div>
+
       <div class="action-btn-container">
-        <button id="mezclar_btn">Mezclar</button>
-        <button id="empezar">Empezar de nuevo</button>
+        <button id="mezclar_btn" onclick="reproducirSonidoMezclar()">Mezclar</button>
+        <button id="empezar_nuevo_btn">Empezar de nuevo</button>
       </div>
     </section>
+      <hr/>
+      <section id="selected-container-section">
+        <h2>¡Te has animado a todo esto!</h2>
+        <ul>
+          <li>
+            <article class="card-done">
+              <p>Travel to himalya</p>
+            </article>
+          </li>
+          <li>
+            <article class="card-done">
+              <p>Travel to himalya</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-    <hr>
 
-    <section id="selected-container-section">
-      <h2>¡Te has animado a todo esto!</h2>
-      <ul>
-        <li>
-          <article class="card-done">
-            <p>Travel to himalya</p>
-          </article>
-        </li>
-        <li>
-          <article class="card-done">
-            <p>Travel to himalya</p>
-          </article>
-        </li>
-      </ul>
-    </section>
-  </main>
+    <footer>All rights reserved ®</footer
 
-  <footer>All rights reserved ®</footer>
 
   <!--personalizar aventura-->
   <dialog id="customize-adventure">
@@ -78,6 +163,7 @@
       <button>Guardar</button>
     </section>
   </dialog>
+   
   <!--crear tu aventura-->
   <dialog id="create-adventure">
     <button class="close-btn">&times;</button>
@@ -97,36 +183,37 @@
     </section>
   </dialog>
 
-  <!--aventura seleccionada-->
-  <dialog id="card-selected">
-    <button class="close-btn">&times;</button>
-    <section>
-      <div>
-        <h2>SOPA DE MELÓN</h2>
-        <p>
-          Una sopa fría hecha con melón fresco, yogur, menta y un toque de
-          limón. Es refrescante y sorprendentemente deliciosa.
-        </p>
-      </div>
-      <div class="social-media">
-        <h3>Comparte tu aventura</h3>
-        <div class="social-media-btns">
-          <a href="#"><img src="/img/instagram.png" alt="Instagram" /></a>
-          <a href="#"><img src="/img/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="/img/twitter.png" alt="Twitter" /></a>
+    <!--aventura seleccionada-->
+    <dialog id="card-selected">
+      <button class="close-btn">&times;</button>
+      <section>
+        <div>
+          <h2>SOPA DE MELÓN</h2>
+          <p>
+            Una sopa fría hecha con melón fresco, yogur, menta y un toque de
+            limón. Es refrescante y sorprendentemente deliciosa.
+          </p>
         </div>
-      </div>
-      <button class="calendar-btn">
-        Agenda tu aventura <img src="/img/calendar.png" alt="Calendar" />
-      </button>
-    </section>
-  </dialog>
+        <div class="social-media">
+          <h3>Comparte tu aventura</h3>
+          <div class="social-media-btns">
+            <a href="#"><img src="/img/instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="/img/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="/img/twitter.png" alt="Twitter" /></a>
+          </div>
+        </div>
+        <button class="calendar-btn">
+          Agenda tu aventura <img src="/img/calendar.png" alt="Calendar" />
+        </button>
+      </section>
+    </dialog>
 
-  <!--dialogo luego de mezclar-->
-  <dialog>
-    <h2>¡Es hora de elegir tu aventura!</h2>
-  </dialog>
 
+    <!--dialogo luego de mezclar-->
+    <dialog>
+      <h2>¡Es hora de elegir tu aventura!</h2>
+    </dialog>
+      
   <!--información-->
   <dialog id="information">
     <button class="close-btn">&times;</button>
@@ -141,8 +228,10 @@
       <h3>¡Cada partida es una nueva aventura, cada elección cuenta!</h3>
     </section>
   </dialog>
+
   <script src="/js/app.js" type="module" defer></script>
   <script src="/js/showCards.js" type="module" defer></script>
-</body>
-
+  <script src="./js/sounds.js"></script>
+  </body>
 </html>
+

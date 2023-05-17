@@ -1,4 +1,6 @@
-// dialogo información 
+import { addLogoToCard } from "./shuffle.js";
+
+// dialogo información
 
 const helpButton = document.getElementsByClassName("help-btn");
 const infoDialogue = document.getElementById("information");
@@ -18,37 +20,21 @@ for (let i = 0; i < closeButtons.length; i++) {
   });
 }
 
-//dialogo aventura seleccionada
+//Botón CREA tu propia aventura 
+const createBtn = document.querySelector('.create-btn');
+const createAdventureDialog = document.querySelector('#create-adventure');
 
-//no se acá qué tenemos que poner 
-//porque este dialogo sale cuando ya selecciono una o mas tarjetas
+createBtn.addEventListener('click', () => {
+  createAdventureDialog.showModal();
+});
 
-//const selectedButton = ver el botón;
-// const selectedDialogue = document.getElementById("card-selected");
 
-// selectedButton[0].addEventListener("clik", () => {
-//   infoDialogue.show();
-// });
+//Botón PERSONALIZA la aventura
+const editButton = document.getElementById('edit-btn');
+const customizeAdventureDialog = document.getElementById('customize-adventure');
 
-//dialogo crear tu aventura
+editButton.addEventListener('click', function() {
+  customizeAdventureDialog.showModal();
+});
 
-const createButton = document.getElementsByClassName("create-btn");
-const createDialoge = document.getElementById("create-adventure");
-
-createButton[0].addEventListener("click", () => {
-  createDialoge.show();
-})
-
-//personaliza tu aventura
-
-//no se acá qué tenemos que poner 
-//porque este dialogo sale desde el editor en las tarjetas
-
-//const customizeButton = ver el botón 
-// const customizeDialoge = document.getElementById("customize-adventure");
-
-// customizeButton[0].addEventListener("click", () => {
-//   customizeDialoge.show();
-// })
-
-//falta el dialogo luego de mezclar 
+addLogoToCard();
