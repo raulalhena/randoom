@@ -1,0 +1,18 @@
+@import url("/styles/atoms/menu_nav_btn.css");
+@import url("/styles/atoms/menu_btn.css");
+
+#menu-section nav {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin: 5px 0;
+  -ms-overflow-style: none;
+  /* hide scrollbar on Edge and IE */
+  scrollbar-width: none;
+  /* hide scrollbar on Firefox */
+}
+
+#menu-section nav::-webkit-scrollbar {
+  display: none;
+  /* hide scrollbar on Chrome, Safari and Opera */
+}
