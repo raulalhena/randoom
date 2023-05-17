@@ -7,7 +7,7 @@ function generarId() {
 const id = generarId();
 
 //adventures: viajes, adrenalina
-const adventures = [
+export const adventures = [
     {
         id: generarId(),
         name: "Viajar a la Isla Sentinel",
