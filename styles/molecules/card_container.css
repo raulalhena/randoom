@@ -1,13 +1,16 @@
 
 @import url("/styles/molecules/card_front.css");
+@import url("/styles/molecules/card_back.css");
 
 
 .card-container {
-    border: 1px solid red;
+    border: 1px solid rgb(29, 226, 62);
     width: 90%;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
