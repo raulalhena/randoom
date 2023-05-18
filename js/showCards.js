@@ -36,17 +36,18 @@ const showCards = (userAdventures) => {
 
 window.addEventListener("load", () => {
     removeAllChilds(cardContainer);
-    showCards(selectCategory(shuffle(adventures), checkCategory()), "front")
+    showCards(selectCategory(shuffle(adventures), checkCategory()))
 });
 
 const shuffleBtn = document.getElementById("mezclar_btn");
 
 shuffleBtn.addEventListener("click", () => {
-    // Dar vuelta a las cartas
+    // Dar vuelta a las cartas y sonido de giro de cartas
+    flipCards(cardContainer);
     // Cambiar de color circulo del dorso
     // Sonido de barajar
     // Mostrar mensaje de elegir carta
-    flipCards(cardContainer);
+
     // showCards(selectCategory(shuffle(adventures), checkCategory()))
 });
 
