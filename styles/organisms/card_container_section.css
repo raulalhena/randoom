@@ -2,7 +2,7 @@
 
 main #card-container-section {
   border: 1px solid purple;
-  height: 60%;
+  /* height: 60%; */
   display: flex;
   justify-content: center;
   align-items: center;
