@@ -48,7 +48,7 @@ window.addEventListener("load", () => {
     showCards(selectCategory(shuffle(adventures), checkCategory()))
 });
 
-const shuffleBtn = document.getElementById("mezclar_btn");
+const shuffleBtn = document.getElementById("shuffle-btn");
 
 shuffleBtn.addEventListener("click", () => {
     // Dar vuelta a las cartas y sonido de giro de cartas
