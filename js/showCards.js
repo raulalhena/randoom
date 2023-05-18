@@ -22,18 +22,19 @@ const flipCards = (parent) => {
     parent.querySelectorAll("article").forEach((child) => {
         child.classList.toggle(`card-front`);
         child.classList.toggle(`card-back`);
+        child.querySelector("img").classList.toggle("front-img");
+        child.querySelector("img").classList.toggle("back-img");
     });
 };
 
 const showCards = (userAdventures) => {
-
     // Crea 12 elementos article dentro del elemento card-container
     for (let i = 0; i < 12; i++) {
         const child = cardContainer.appendChild(document.createElement("article"));
         child.classList.add(`card-front`);
         child.classList.add(`card_${userAdventures[i].category}_img`);
         child.innerHTML = `
-        <img class="" src='/img/${userAdventures[i].category}_opacity.png' alt='Modificar aventura' width="100%" height="100%" />
+        <img class="front-img" src='/img/${userAdventures[i].category}.jpg' alt='Modificar aventura' width="100%" height="100%" />
 
         <div class="card-content-title">
             <h3>${userAdventures[i].name}</h5>
@@ -45,9 +46,9 @@ const showCards = (userAdventures) => {
         </div>
         `;
 
-        // const btn = document.getElementById(`edit-btn-${userAdventures[i].id}`).addEventListener("click", () => {
-        //     customizeAdventureDialog.showModal();
-        // });
+        const btn = document.getElementById(`edit-btn-${userAdventures[i].id}`).addEventListener("click", () => {
+            customizeAdventureDialog.showModal();
+        });
     }
 };
 

@@ -114,4 +114,13 @@ main #menu-section {
 
 .card-content-btn {
   bottom: 0;
+
+}
+
+.front-img {
+  opacity: 0.5;
+}
+
+.back-img {
+  opacity: 1;
 }
