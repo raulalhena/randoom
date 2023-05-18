@@ -95,12 +95,12 @@ export const adventures = [
         selected: true,
         completed: true,
     },
-    //adenalina
+    //adrenalina
     {
         id: generarId(),
         name: "Buceo en cuevas",
         description: "Buceo en Cueva de las Gambas, Puerto del Carmen.",
-        category: "adenalina",
+        category: "adrenalina",
         selected: true,
         completed: true,
     },
@@ -109,7 +109,7 @@ export const adventures = [
         name: "Parkour",
         description:
             "Animate a realizar parkour en el más atractivo parque en Amsterdam: Sloterpark",
-        category: "adenalina",
+        category: "adrenalina",
         selected: true,
         completed: true,
     },
@@ -118,7 +118,7 @@ export const adventures = [
         name: "Bungee jumping",
         description:
             "Salta con liana desde la presa de Llosa del Cavall (lugar más alto de España)",
-        category: "adenalina",
+        category: "adrenalina",
         selected: true,
         completed: true,
     },
@@ -126,7 +126,7 @@ export const adventures = [
         id: generarId(),
         name: "Skydiving",
         description: "Salta con un paracaídas en Fox Glacier, Nueva Zelanda",
-        category: "adenalina",
+        category: "adrenalina",
         selected: true,
         completed: true,
     },
@@ -135,7 +135,7 @@ export const adventures = [
         name: "Buceo en jaula",
         description:
             "Experiencia única de buceo en jaula con tiburones en Ciudad del Cabo, Sudáfrica",
-        category: "adenalina",
+        category: "adrenalina",
         selected: true,
         completed: true,
     },
@@ -144,7 +144,7 @@ export const adventures = [
         name: "Recorre North Yungas Road",
         description:
             "La carretera más peligrosa está en Bolivia, y es un buen momento para que viajes por ella",
-        category: "adenalina",
+        category: "adrenalina",
         selected: true,
         completed: true,
     },
@@ -152,14 +152,14 @@ export const adventures = [
         id: generarId(),
         name: "Rafting",
         description: "Viaja por los Ríos Alsek y Tatshenshini en Canadá en botes de rafting",
-        category: "adenalina",
+        category: "adrenalina",
         selected: true,
     },
     {
         id: generarId(),
         name: "Salto base",
         description: "Mont Blanc es el lugar ideal para que te animes a hacer el mejor salto base que pueda existir",
-        category: "adenalina",
+        category: "adrenalina",
         selected: true,
         completed: true,
     },
@@ -168,7 +168,7 @@ export const adventures = [
         name: "Festival del queso Rodante",
         description:
             "Animate a perseguir quesos rodantes por la colina de Brockworth, Inglaterra",
-        category: "adenalina",
+        category: "adrenalina",
         selected: true,
         completed: true,
     },
@@ -177,7 +177,7 @@ export const adventures = [
         name: "Escalada libre",
         description:
             "Escala por la pared vertical en El Capitan, Sierra Nevada de Estados Unidos",
-        category: "adenalina",
+        category: "adrenalina",
         selected: true,
         completed: true,
     },

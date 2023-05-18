@@ -4,6 +4,8 @@ const editButton = document.getElementById('edit-btn');
 const customizeAdventureDialog = document.getElementById('customize-adventure');
 
 
-editButton.addEventListener('click', function () {
-  customizeAdventureDialog.showModal();
-});
+export const editAdventure = () => {
+  editButton.addEventListener('click', function () {
+    customizeAdventureDialog.showModal();
+  })
+};
