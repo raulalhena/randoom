@@ -10,20 +10,22 @@
     background-image: url(/img/todas_opacity.png);
     background-size: cover;
     top: 0;
-    left: 10;   
+    left: 10;
+    height: 250%;
+    width: 200%;
 }
 
 .front_legado_img {
-    background-image: url(/img/legado_opacity.png);
-} 
+    background-image: url("/img/legado_opacity.png");
+}
 
 .front_comida_img {
     background-image: url(/img/comida_opacity.png);
-} 
+}
 
 .front_adrenalina_img {
     background-image: url(/img/adrenalina_opacity.png);
-} 
+}
 
 .front_cultura_img {
     background-image: url(/img/cultura_opacity.png);

@@ -13,16 +13,25 @@
 </head>
 
 <body>
+  <!-- ******************************** -->
+  <!-- Header con logo y botón de ayuda -->
+  <!-- ******************************** -->
   <header>
-    <img src="/img/logo.png" alt="Radventure" />
+    <img src="/img/logo.png" alt="Randventure" />
     <button class="help-btn">?</button>
   </header>
+  <!-- ********************************************************************************* -->
+  <!-- Seccion princpal: Menú deslizante, cartas y botones de mezclar y empezar de nuevo -->
+  <!-- ********************************************************************************* -->
   <main>
+    <!-- ************************************** -->
+    <!-- Menú deslizante y botón crear aventura -->
+    <!-- ************************************** -->
     <section id="menu-section">
       <nav>
-        <button>Todas</button>
+        <button autofocus>Todas</button>
         <button>Legado</button>
-        <button autofocus>Adrenalina</button>
+        <button>Adrenalina</button>
         <button>Cultura</button>
         <button>Viajes</button>
         <button>Comida</button>
@@ -30,43 +39,16 @@
       <button class="create-btn">Crea tu propia aventura</button>
     </section>
 
+    <!-- ********************************************* -->
+    <!-- Cartas y botones de mezclar y empezr de nuevo -->
+    <!-- ********************************************* -->
     <section id="card-container-section">
-
       <div class="card-container">
-        <article class="card-front front_legado_img">
-          <h3>SOPA DE MELÓN</h3>
-            <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
-        </article>
-        <article class="card-back back_legado_img">
-        </article>
-        <article class="card-front">
-          <h3>SOPA DE MELÓN</h3>
-            <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
-        </article>
-        <article class="card-back">
-         </article> <article class="card-front">
-          <h3>SOPA DE MELÓN</h3>
-            <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
-        </article>
-        <article class="card-back">
-        </article> <article class="card-front">
-          <h3>SOPA DE MELÓN</h3>
-            <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
-        </article>
-        <article class="card-back">
-        </article> <article class="card-front">
-          <h3>SOPA DE MELÓN</h3>
-            <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
-        </article>
-        <article class="card-back">
-        </article> <article class="card-front">
-          <h3>SOPA DE MELÓN</h3>
-            <a href="#" id="edit-btn"><img src="/img/edit.png" alt="Modificar aventura" /></a>
-        </article>
-        <article class="card-back">
-        </article>
       </div>
 
+      <!-- ******************************************************** -->
+      <!-- Botones de sección principal: Mezclar y Empezar de nuevo -->
+      <!-- ******************************************************** -->
       <div class="action-btn-container">
         <button id="mezclar_btn">Mezclar</button>
         <button id="empezar_nuevo_btn">Empezar de nuevo</button>
@@ -74,6 +56,9 @@
     </section>
 
     <hr />
+    <!-- ************************************* -->
+    <!-- Sección de aventuras ya seleccionadas -->
+    <!-- ************************************* -->
     <section id="selected-container-section">
       <h2>¡Te has animado a todo esto!</h2>
       <ul>
@@ -91,8 +76,18 @@
     </section>
   </main>
 
+  <!-- ****** -->
+  <!-- Footer -->
+  <!-- ****** -->
+  <footer>All rights reserved ®</footer>
 
-  <footer>All rights reserved ®</footer <!--personalizar aventura-->
+  <!-- ********************************* -->
+  <!--              DIALOGS              -->
+  <!-- ********************************* -->
+
+  <!-- ********************* -->
+  <!-- Personalizar aventura -->
+  <!-- ********************* -->
   <dialog id="customize-adventure">
     <button class="close-btn">&times;</button>
     <section>
@@ -111,7 +106,9 @@
     </section>
   </dialog>
 
-  <!--crear tu aventura-->
+  <!-- ************** -->
+  <!-- Crear aventura -->
+  <!-- ************** -->
   <dialog id="create-adventure">
     <button class="close-btn">&times;</button>
     <section>
@@ -130,7 +127,9 @@
     </section>
   </dialog>
 
-  <!--aventura seleccionada-->
+  <!-- ********************* -->
+  <!-- Aventura seleccionada -->
+  <!-- ********************* -->
   <dialog id="card-selected">
     <button class="close-btn">&times;</button>
     <section>
@@ -155,13 +154,16 @@
     </section>
   </dialog>
 
-
-  <!--dialogo luego de mezclar-->
+  <!-- ******************************* -->
+  <!-- Mensaje de seleccionar aventura -->
+  <!-- ******************************* -->
   <dialog>
     <h2>¡Es hora de elegir tu aventura!</h2>
   </dialog>
 
-  <!--información-->
+  <!-- *************************************** -->
+  <!-- Cuadro de información con instrucciones -->
+  <!-- *************************************** -->
   <dialog id="information">
     <button class="close-btn">&times;</button>
     <section>
@@ -176,9 +178,12 @@
     </section>
   </dialog>
 
+  <!-- ****************** -->
+  <!-- SCRIPTS JAVASCRIPT -->
+  <!-- ****************** -->
   <script src="/js/app.js" type="module" defer></script>
   <script src="/js/showCards.js" type="module" defer></script>
-  <script src="./js/sounds.js"></script>
+  <!-- <script src="./js/sounds.js"></script> -->
 </body>
 
 </html>
