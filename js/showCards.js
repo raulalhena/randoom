@@ -10,26 +10,26 @@ const cardContainer = document.querySelector(".card-container");
 
 // Elimina todas los elementos hijos de un elemento html
 const removeAllChilds = (parent) => {
-  parent.querySelectorAll("article").forEach((child) => {
-    child.remove();
-  });
+    parent.querySelectorAll("article").forEach((child) => {
+        child.remove();
+    });
 };
 
 const flipCards = (parent) => {
-  parent.querySelectorAll("article").forEach((child) => {
-    child.classList.toggle(`card-front`);
-    child.classList.toggle(`card-back`);
-  });
+    parent.querySelectorAll("article").forEach((child) => {
+        child.classList.toggle(`card-front`);
+        child.classList.toggle(`card-back`);
+    });
 };
 
 const showCards = (userAdventures) => {
-  // Crea 12 elementos article dentro del elemento card-container
-  for (let i = 0; i < 12; i++) {
-    const child = cardContainer.appendChild(document.createElement("article"));
-    child.classList.add(`card-front`);
-    child.classList.add(`card_${userAdventures[i].category}_img`);
-    child.innerHTML = `
-        <img class="" src='/img/todas_opacity.png' alt='Modificar aventura' width="100%" height="100%" />
+    // Crea 12 elementos article dentro del elemento card-container
+    for (let i = 0; i < 12; i++) {
+        const child = cardContainer.appendChild(document.createElement("article"));
+        child.classList.add(`card-front`);
+        child.classList.add(`card_${userAdventures[i].category}_img`);
+        child.innerHTML = `
+        <img class="" src='/img/${userAdventures[i].category}_opacity.png' alt='Modificar aventura' width="100%" height="100%" />
 
         <div class="card-content-title">
             <h3>${userAdventures[i].name}</h5>
@@ -40,7 +40,7 @@ const showCards = (userAdventures) => {
             </a>
         </div>
         `;
-  }
+    }
 };
 
 window.addEventListener("load", () => {
