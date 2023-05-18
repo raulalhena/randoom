@@ -1,13 +1,10 @@
 @import url("/styles/molecules/card_container.css");
-@import url("/styles/molecules/card_front.css");
-@import url("/styles/atoms/empezar_nuevo_btn.css");
-@import url("/styles/atoms/mezclar_btn.css");
 
 main #card-container-section {
-    border: 1px solid purple;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  border: 1px solid purple;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
