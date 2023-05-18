@@ -50,7 +50,9 @@
       <!-- Botones de sección principal: Mezclar y Empezar de nuevo -->
       <!-- ******************************************************** -->
       <div class="action-btn-container">
+
         <button id="shuffle-btn">Jugar</button>
+
         <button id="play-again-btn">Nueva ronda</button>
       </div>
     </section>
@@ -60,19 +62,15 @@
     <!-- Sección de aventuras ya seleccionadas -->
     <!-- ************************************* -->
     <section id="selected-container-section">
-      <h2>¡Te has animado a todo esto!</h2>
-      <ul>
-        <li>
-          <article class="card-done">
-            <p>Travel to himalya</p>
-          </article>
-        </li>
-        <li>
-          <article class="card-done">
-            <p>Travel to himalya</p>
-          </article>
-        </li>
-      </ul>
+      <div class="title-garbage">  
+      <h2>¡Te has animado a todo esto!</h2> 
+      <a href="#"><img src="/img/basura.png" alt="Reiniciar el juego"/></a>
+      </div>
+    <div class="checked-adventure">
+      <label><input type= "checkbox" id="cbox1" value="basura"> Travel to himalaya</label><br>
+      <label><input type= "checkbox" id="cbox1" value="basura"> Travel to himalaya</label><br>
+      <label><input type= "checkbox" id="cbox1" value="basura"> Travel to himalaya</label><br>
+    </div>
     </section>
   </main>
 
@@ -178,6 +176,20 @@
       <h3>¡Cada partida es una nueva aventura, cada elección cuenta!</h3>
     </section>
   </dialog>
+
+  <!-- ********************* -->
+  <!-- Reiniciar el juego  -->
+  <!-- ********************* -->
+  <dialog id="restart-game">
+    <button class="close-btn">&times;</button>
+    <section>
+      <h2>¿Quieres reiniciar el juego?</h2>
+      <p>Todas las aventuras volverán a la lista inicial y podrás elegirlas de nuevo</p>
+       <button>Si</button>
+       <button>No</button>
+    </section>
+  </dialog>
+
 
   <!-- ****************** -->
   <!-- SCRIPTS JAVASCRIPT -->
