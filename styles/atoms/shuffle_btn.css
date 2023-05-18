@@ -1,20 +1,21 @@
-.action-btn-container #mezclar_btn {
+.action-btn-container #shuffle-btn {
     width: 66px;
     height: 36px;
 
     background: #26B19A;
     box-shadow: 0px 2px 6px #D9D9D9;
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
 
-    font-family: 'DM Sans';
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
     color: #F7F7F7;
 }
+
 .action-btn-container #mezclar_btn:hover {
-    color:#26B19A;
+    color: #26B19A;
     background: #F7F7F7;
 }

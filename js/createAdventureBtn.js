@@ -3,6 +3,8 @@
 const createBtn = document.querySelector('.create-btn');
 const createAdventureDialog = document.querySelector('#create-adventure');
 
-createBtn.addEventListener('click', () => {
-  createAdventureDialog.showModal();
-});
+export const createAdventure = () => {
+  createBtn.addEventListener('click', () => {
+    createAdventureDialog.showModal();
+  })
+};

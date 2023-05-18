@@ -10,9 +10,9 @@ const cardContainer = document.querySelector(".card-container");
 
 // Elimina todas los elementos hijos de un elemento html
 const removeAllChilds = (parent) => {
-  parent.querySelectorAll("article").forEach((child) => {
-    child.remove();
-  });
+    parent.querySelectorAll("article").forEach((child) => {
+        child.remove();
+    });
 };
 
 const flipCards = (parent) => {
@@ -42,7 +42,7 @@ const showCards = (userAdventures) => {
             </a>
         </div>
         `;
-  }
+    }
 };
 
 window.addEventListener("load", () => {
@@ -50,7 +50,7 @@ window.addEventListener("load", () => {
     showCards(selectCategory(shuffle(adventures), checkCategory()))
 });
 
-const shuffleBtn = document.getElementById("mezclar_btn");
+const shuffleBtn = document.getElementById("shuffle-btn");
 
 shuffleBtn.addEventListener("click", () => {
     // Dar vuelta a las cartas y sonido de giro de cartas
