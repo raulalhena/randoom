@@ -4,14 +4,12 @@
 @import url("/styles/atoms/mezclar_btn.css");
 
 .card-container {
-    border: 1px solid rgb(29, 226, 62);
-    width: 90%;
-    height: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 15%;
-    gap: 3%;
-    margin-bottom: 20px;
+  border: 1px solid rgb(29, 226, 62);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
 }

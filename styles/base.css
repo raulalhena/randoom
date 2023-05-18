@@ -96,3 +96,22 @@ main #menu-section {
   height: 40%;
   border-radius: 50%;
 }
+
+.card-content-title,
+.card-content-btn {
+  position: absolute;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  text-align: center;
+}
+
+.card-content-title {
+  top: 0;
+}
+
+.card-content-btn {
+  bottom: 0;
+}

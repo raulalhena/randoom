@@ -1,23 +1,23 @@
 .card-back {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(/img/todas.png);
-    background-size: cover;
-    top: 0;
-    left: 10;
-    border: 1px solid blue;
-    height: 100px;
-    width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/img/todas.png);
+  background-size: cover;
+  top: 0;
+  left: 10;
+  border: 1px solid blue;
+  height: 250px;
+  width: 200px;
 }
 
 .card-back h3 {
-    display: none;
+  display: none;
 }
 
 .card-back a {
-    display: none;
+  display: none;
 }
 
 /* #edit-btn {
@@ -29,21 +29,21 @@
 } */
 
 .back_legado_img {
-    background-image: url(/img/legado.jpg);
+  background-image: url(/img/legado.jpg);
 }
 
 .back_comida_img {
-    background-image: url(/img/comida.jpg);
+  background-image: url(/img/comida.jpg);
 }
 
 .back_adrenalina_img {
-    background-image: url(/img/adrenalina.jpg);
+  background-image: url(/img/adrenalina.jpg);
 }
 
 .back_cultura_img {
-    background-image: url(/img/cultura.jpg);
+  background-image: url(/img/cultura.jpg);
 }
 
 .back_viajes_img {
-    background-image: url(/img/viaje.jpg);
+  background-image: url(/img/viaje.jpg);
 }
