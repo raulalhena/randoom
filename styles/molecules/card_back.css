@@ -8,8 +8,8 @@
     top: 0;
     left: 10;
     border: 1px solid blue;
-    height: 250px;
-    width: 200px;
+    height: 100px;
+    width: 50px;
 }
 
 .card-back h3 {
@@ -20,13 +20,13 @@
     display: none;
 }
 
-#edit-btn {
+/* #edit-btn {
     display: none;
 }
 
 #edit-btn img {
     display: none;
-}
+} */
 
 .back_legado_img {
     background-image: url(/img/legado.jpg);
