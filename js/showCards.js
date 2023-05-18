@@ -10,45 +10,51 @@ const cardContainer = document.querySelector(".card-container");
 
 // Elimina todas los elementos hijos de un elemento html
 const removeAllChilds = (parent) => {
-    parent.querySelectorAll("article").forEach(child => {
-        child.remove()
-    });
-}
+  parent.querySelectorAll("article").forEach((child) => {
+    child.remove();
+  });
+};
 
 const flipCards = (parent) => {
-    parent.querySelectorAll("article").forEach(child => {
-        child.classList.toggle(`card-front`);
-        child.classList.toggle(`card-back`);
-    });
-}
+  parent.querySelectorAll("article").forEach((child) => {
+    child.classList.toggle(`card-front`);
+    child.classList.toggle(`card-back`);
+  });
+};
 
 const showCards = (userAdventures) => {
+  // Crea 12 elementos article dentro del elemento card-container
+  for (let i = 0; i < 12; i++) {
+    const child = cardContainer.appendChild(document.createElement("article"));
+    child.classList.add(`card-front`);
+    child.classList.add(`card_${userAdventures[i].category}_img`);
+    child.innerHTML = `
+        <img class="" src='/img/todas_opacity.png' alt='Modificar aventura' width="100%" height="100%" />
 
-    // Crea 12 elementos article dentro del elemento card-container
-    for (let i = 0; i < 12; i++) {
-        const child = cardContainer.appendChild(document.createElement("article"));
-        child.classList.add(`card-front`);
-        child.classList.add(`card_${userAdventures[i].category}_img`);
-        child.innerHTML = `<h3>${userAdventures[i].name}</h3><a href='#' id='edit-btn'><img src='/img/edit.png' alt='Modificar aventura' /></a>`;
-    }
-
-}
+        <div class="card-content-title">
+            <h3>${userAdventures[i].name}</h5>
+        </div>
+        <div class="card-content-btn">
+            <a href='#' id='edit-btn'>
+                <img src='/img/edit.png' alt='Modificar aventura' />
+            </a>
+        </div>
+        `;
+  }
+};
 
 window.addEventListener("load", () => {
-    removeAllChilds(cardContainer);
-    showCards(selectCategory(shuffle(adventures), checkCategory()), "front")
+  removeAllChilds(cardContainer);
+  showCards(selectCategory(shuffle(adventures), checkCategory()), "front");
 });
 
 const shuffleBtn = document.getElementById("mezclar_btn");
 
 shuffleBtn.addEventListener("click", () => {
-    // Dar vuelta a las cartas
-    // Cambiar de color circulo del dorso
-    // Sonido de barajar
-    // Mostrar mensaje de elegir carta
-    flipCards(cardContainer);
-    // showCards(selectCategory(shuffle(adventures), checkCategory()))
+  // Dar vuelta a las cartas
+  // Cambiar de color circulo del dorso
+  // Sonido de barajar
+  // Mostrar mensaje de elegir carta
+  flipCards(cardContainer);
+  // showCards(selectCategory(shuffle(adventures), checkCategory()))
 });
-
-
-
