@@ -24,6 +24,7 @@ const flipCards = (parent) => {
         child.classList.toggle(`card-back`);
         child.querySelector("img").classList.toggle("front-img");
         child.querySelector("img").classList.toggle("back-img");
+        child.querySelector("img").src = "/img/todas.png";
     });
 };
 
