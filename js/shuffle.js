@@ -13,12 +13,9 @@ export const shuffle = (array) => {
 };
 
 export function addLogoToCard() {
-  const articleElements = document.querySelectorAll(
-    "#card-container-section .card-container article"
-  );
-  console.log(articleElements);
-
-  articleElements.forEach((article) => {
+  const cardContainer = document.querySelector(".card-container");
+  const articles = cardContainer.querySelectorAll("article");
+  articles.forEach((article) => {
     article.innerHTML += `
        <img class="logo-mezclar" src="/img/logoR.png" alt="logo"/>
     `;
@@ -28,11 +25,11 @@ export function addLogoToCard() {
     const intervalId = setInterval(() => {
       const randomColor = getRandomHexColor();
       imgElement.style.backgroundColor = randomColor;
-    }, 500);
+    }, 100);
 
     setTimeout(() => {
       clearInterval(intervalId);
-    }, 5000);
+    }, 2000);
 
     // Initial execution
     const randomColor = getRandomHexColor();

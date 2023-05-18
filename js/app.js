@@ -1,6 +1,4 @@
-import { addLogoToCard } from "./shuffle.js";
 import { createAdventure } from "./createAdventureBtn.js";
-
 
 // dialogo información
 
@@ -22,6 +20,4 @@ for (let i = 0; i < closeButtons.length; i++) {
   });
 }
 
-
 createAdventure();
-addLogoToCard();
