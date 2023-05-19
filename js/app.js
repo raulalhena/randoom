@@ -29,6 +29,8 @@ for (let i = 0; i < closeButtons.length; i++) {
 
 createAdventure();
 
+const cardContainer = document.querySelector(".card-container")
+
 window.addEventListener("load", () => {
   removeAllChilds(cardContainer);
   showCards(selectCategory(shuffle(adventures), checkCategory()));
