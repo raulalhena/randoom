@@ -4,7 +4,6 @@
 @import url("/styles/atoms/play_btn.css");
 
 .card-container {
-  border: 1px solid rgb(29, 226, 62);
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
