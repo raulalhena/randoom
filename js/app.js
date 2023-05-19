@@ -56,7 +56,7 @@ createBtn.addEventListener('click', (e) => {
 restartGameBtn.addEventListener('click', (e) => {
   e.preventDefault();
   createRestartDialog(restartDialog);
-})
+});
 closeDialog(closeButtons, closeDialogues);
 
 // Ejecución en el momento de cargarse la página
