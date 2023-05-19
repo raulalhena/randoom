@@ -1,4 +1,4 @@
-.action-btn-container #shuffle-btn {
+.action-btn-container #play-btn {
     width: 66px;
     height: 36px;
 
@@ -15,7 +15,8 @@
     color: #F7F7F7;
 }
 
-.action-btn-container #mezclar_btn:hover {
+/* 
+.action-btn-container #play-btn:hover {
     color: #26B19A;
     background: #F7F7F7;
-}
+} */
