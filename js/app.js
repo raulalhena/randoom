@@ -1,7 +1,11 @@
-import { addLogoToCard } from "./shuffle.js";
-import { createAdventure } from "./createAdventureBtn.js";
-import { editAdventure } from "./editBtn.js";
-
+import { adventures } from "./data.js";
+import { createAdventure } from "./createAdventure.js";
+import { removeAllChilds } from "./removeAllChilds.js";
+import { showCards } from "./showCards.js";
+import { selectCategory } from "./selectCategory.js";
+import { shuffle } from "./shuffle.js";
+import { checkCategory } from "./checkCategory.js";
+import "./playAgain.js";
 
 // dialogo información
 
@@ -23,7 +27,9 @@ for (let i = 0; i < closeButtons.length; i++) {
   });
 }
 
-
 createAdventure();
-editAdventure();
-addLogoToCard();
+
+window.addEventListener("load", () => {
+  removeAllChilds(cardContainer);
+  showCards(selectCategory(shuffle(adventures), checkCategory()));
+});
