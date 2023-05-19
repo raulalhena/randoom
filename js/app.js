@@ -5,11 +5,15 @@ import { showCards } from "./showCards.js";
 import { selectCategory } from "./selectCategory.js";
 import { shuffle } from "./shuffle.js";
 import { checkCategory } from "./checkCategory.js";
+
+import { createRestartDialog } from "./trash.js"; 
+
 import { closeDialog } from "./closeDialog.js";
 import { showInfoDialog } from "./showInfoDialog.js";
 import { adventures } from "./data.js";
 import { play } from "./play.js";
 import { playAgain } from "./playAgain.js";
+
 
 // Containers
 const cardContainer = document.querySelector(".card-container");
@@ -18,11 +22,24 @@ const cardContainer = document.querySelector(".card-container");
 const infoDialogue = document.getElementById("information");
 const closeDialogues = document.getElementsByTagName("dialog");
 
+
+const createBtn = document.getElementById('restart-game-btn');
+const createDialog = document.getElementById('restart-game'); 
+createBtn.addEventListener('click', () =>{ 
+  createRestartDialog(createDialog);
+})
+
+
+
+
+
+
 // // Botones
 const playBtn = document.getElementById("play-btn");
 const playAgainBtn = document.getElementById("play-again-btn");
 const closeButtons = document.getElementsByClassName("close-btn");
 const helpButton = document.querySelector(".help-btn");
+
 
 
 // Añade eventos de los elementos
