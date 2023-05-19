@@ -1,17 +1,18 @@
 import { addLogoToCard } from "./shuffle.js";
 import { flipCards } from "./flipCards.js";
+import { shuffle } from "./shuffle.js";
+import { addClickToCards } from "./addClickToCards.js";
 
-const cardContainer = document.querySelector(".card-container");
-const playBtn = document.getElementById("shuffle-btn");
+// Dar vuelta a las cartas y sonido de giro de cartas
 
-playBtn.addEventListener("click", () => {
-    // Dar vuelta a las cartas y sonido de giro de cartas
+// Cambiar de color circulo del dorso
+// Sonido de barajar
+// Mostrar mensaje de elegir carta
+
+export const play = (cardContainer, userAdventures) => {
     flipCards(cardContainer);
+    addClickToCards(cardContainer, userAdventures);
     addLogoToCard();
+    shuffle(userAdventures);
 
-    // Cambiar de color circulo del dorso
-    // Sonido de barajar
-    // Mostrar mensaje de elegir carta
-
-    // showCards(selectCategory(shuffle(adventures), checkCategory()))
-});
+}

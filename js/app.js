@@ -1,38 +1,67 @@
-import { adventures } from "./data.js";
+
+import "./sounds.js";
 import { createAdventure } from "./createAdventure.js";
 import { removeAllChilds } from "./removeAllChilds.js";
 import { showCards } from "./showCards.js";
 import { selectCategory } from "./selectCategory.js";
 import { shuffle } from "./shuffle.js";
 import { checkCategory } from "./checkCategory.js";
-import "./play.js";
-import "./playAgain.js";
+import { createRestartDialog } from "./trash.js";
+import { showInfoDialog } from "./showInfoDialog.js";
+import { closeDialog } from "./closeDialog.js";
+import { adventures } from "./data.js";
+import { play } from "./play.js";
+import { playAgain } from "./playAgain.js";
+import { changeButtonState } from "./changeButtonState.js";
 
-// dialogo información
+// Variables
+let userAdventures = [];
 
-const helpButton = document.getElementsByClassName("help-btn");
+// Containers
+const cardContainer = document.querySelector(".card-container");
+
+// // Dialogos
 const infoDialogue = document.getElementById("information");
-const closeButtons = document.getElementsByClassName("close-btn");
 const closeDialogues = document.getElementsByTagName("dialog");
+const createAdventureDialog = document.querySelector('#create-adventure');
+const restartDialog = document.getElementById('restart-game');
 
-helpButton[0].addEventListener("click", () => {
-  infoDialogue.show();
+// // Botones
+const playBtn = document.getElementById("play-btn");
+const playAgainBtn = document.getElementById("play-again-btn");
+const closeButtons = document.getElementsByClassName("close-btn");
+const helpButton = document.querySelector(".help-btn");
+const createBtn = document.querySelector('.create-btn');
+const restartGameBtn = document.getElementById('restart-game-btn');
+
+// Añade eventos de los elementos
+playBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  play(cardContainer, userAdventures);
+  changeButtonState(playBtn);
 });
+playAgainBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  playAgain(cardContainer, adventures);
+  changeButtonState(playBtn);
+});
+helpButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  showInfoDialog(infoDialogue);
+});
+createBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  createAdventure(createAdventureDialog);
+});
+restartGameBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  createRestartDialog(restartDialog);
+});
+closeDialog(closeButtons, closeDialogues);
 
-//bucle para cerrar las ventanas
-for (let i = 0; i < closeButtons.length; i++) {
-  closeButtons[i].addEventListener("click", () => {
-    for (let j = 0; j < closeDialogues.length; j++) {
-      closeDialogues[j].close();
-    }
-  });
-}
-
-createAdventure();
-
-const cardContainer = document.querySelector(".card-container")
-
+// Ejecución en el momento de cargarse la página
 window.addEventListener("load", () => {
   removeAllChilds(cardContainer);
-  showCards(selectCategory(shuffle(adventures), checkCategory()));
+  userAdventures = selectCategory(shuffle(adventures), checkCategory())
+  showCards(cardContainer, userAdventures);
 });

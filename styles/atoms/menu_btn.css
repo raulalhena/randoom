@@ -3,6 +3,8 @@
   padding: 10px 8px;
   background-color: #f87628;
   border-radius: 10px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   color: #f7f7f7;
+  cursor: pointer;
 }

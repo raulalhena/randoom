@@ -4,6 +4,7 @@
 
     background: #943B7F;
     box-shadow: 0px 2px 6px #DADADA;
+    border-style: none;
     border-radius: 10px;
     cursor: pointer;
 
@@ -15,7 +16,8 @@
     color: #F7F7F7;
 }
 
-.action-btn-container #empezar_nuevo_btn:hover {
+/* 
+.action-btn-container #play-again-btn:hover {
     color: #943B7F;
     background: #F7F7F7;
-}
+} */

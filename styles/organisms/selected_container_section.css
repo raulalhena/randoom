@@ -1,7 +1,7 @@
 
 
 @import url("/styles/molecules/selected_container_section-checked-adventure.css");
-@import url("/styles/molecules/selected_container_section-title-garbage.css");
+@import url("/styles/molecules/selected_container_section-title-trash.css");
 @import url("/styles/atoms/hr.css");
 
 #selected-container-section {
@@ -12,6 +12,5 @@
     margin-bottom: 20px;
     gap: 10px;
     padding-left: 10px;
-    border: 1px solid orange;
   }
 

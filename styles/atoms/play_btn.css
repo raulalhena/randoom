@@ -1,9 +1,10 @@
-.action-btn-container #shuffle-btn {
+.action-btn-container #play-btn {
     width: 66px;
     height: 36px;
 
     background: #26B19A;
     box-shadow: 0px 2px 6px #D9D9D9;
+    border-style: none;
     border-radius: 10px;
     cursor: pointer;
 
@@ -13,9 +14,11 @@
     font-size: 12px;
     line-height: 16px;
     color: #F7F7F7;
+    margin-top: 8px;
 }
 
-.action-btn-container #mezclar_btn:hover {
+/* 
+.action-btn-container #play-btn:hover {
     color: #26B19A;
     background: #F7F7F7;
-}
+} */

@@ -23,7 +23,13 @@
 @import url("/styles/organisms/footer.css");
 
 /*Selected container section*/ 
-@import url(/styles/organisms/selected_container_section.css);
+@import url("/styles/organisms/selected_container_section.css");
+
+/*Restart game*/
+@import url("/styles/organisms/dialog3_restart_game.css");
+
+/* Media queries */
+@import url("/styles/media-queries/media-queries.css");
 
 * {
   margin: 0;
@@ -104,8 +110,8 @@ main #menu-section {
 
 .logo-mezclar {
   width: 100%;
-  padding: 20px 0;
   border-radius: 50%;
+  padding: 10px 0;
 }
 
 .card-content-title,
@@ -125,6 +131,11 @@ main #menu-section {
 
 .card-content-btn {
   bottom: 0;
+}
+
+.front-img,
+.back-img {
+  width: 100%;
 }
 
 .front-img {

@@ -1,9 +1,6 @@
-// Obtenemos el elemento con la clase .card-container
-const cardContainer = document.querySelector(".card-container");
-//
-const customizeAdventureDialog = document.getElementById("customize-adventure");
-
-export const showCards = (userAdventures) => {
+// Muestra cartas en pantalla, crea elementos article y añade un eventListener a los botones de editar
+export const showCards = (cardContainer, userAdventures) => {
+    const customizeAdventureDialog = document.getElementById("customize-adventure");
     // Crea 12 elementos article dentro del elemento card-container
     for (let i = 0; i < 12; i++) {
         const child = cardContainer.appendChild(document.createElement("article"));
@@ -29,8 +26,3 @@ export const showCards = (userAdventures) => {
             });
     }
 };
-
-
-
-
-
