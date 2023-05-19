@@ -1,2 +1,7 @@
 @import url(/styles/atoms/selected_container_section-title.css);
 @import url(/styles/atoms/selected-container-section-garbage.css);
+
+#selected-container-section .title-garbage{
+    display: flex;
+    justify-content: space-between;
+}
