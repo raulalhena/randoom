@@ -1,0 +1,28 @@
+#chooseAdventurePopUp {
+  background-color: transparent;
+  background-image: none;
+  opacity: 0;
+  animation: fade-in 2s forwards; 
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#chooseAdventurePopUp h2 {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+               0 0 20px rgba(255, 255, 255, 0.6),
+               0 0 30px rgba(255, 255, 255, 0.4),
+               0 0 40px rgba(255, 255, 255, 0.2);
+}
+  
