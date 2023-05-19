@@ -10,10 +10,9 @@ import { addClickToCards } from "./addClickToCards.js";
 // Mostrar mensaje de elegir carta
 
 export const play = (cardContainer, userAdventures) => {
-    alert("play ")
     flipCards(cardContainer);
     addClickToCards(cardContainer, userAdventures);
     addLogoToCard();
     shuffle(userAdventures);
-    alert(userAdventures[0].id)
+
 }
