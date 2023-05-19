@@ -1,6 +1,6 @@
 
 
-export const closeDialog = (closeButtons) => {
+export const closeDialog = (closeButtons, closeDialogues) => {
     //bucle para cerrar las ventanas
     for (let i = 0; i < closeButtons.length; i++) {
         closeButtons[i].addEventListener("click", () => {
