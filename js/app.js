@@ -6,6 +6,7 @@ import { selectCategory } from "./selectCategory.js";
 import { shuffle } from "./shuffle.js";
 import { checkCategory } from "./checkCategory.js";
 import "./playAgain.js";
+import { createRestartDialog } from "./trash.js"; 
 
 // dialogo información
 
@@ -13,6 +14,16 @@ const helpButton = document.getElementsByClassName("help-btn");
 const infoDialogue = document.getElementById("information");
 const closeButtons = document.getElementsByClassName("close-btn");
 const closeDialogues = document.getElementsByTagName("dialog");
+
+const createBtn = document.getElementById('restart-game-btn');
+const createDialog = document.getElementById('restart-game'); 
+createBtn.addEventListener('click', () =>{ 
+  createRestartDialog(createDialog);
+})
+
+
+
+
 
 helpButton[0].addEventListener("click", () => {
   infoDialogue.show();
