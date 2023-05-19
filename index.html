@@ -51,7 +51,7 @@
       <!-- ******************************************************** -->
       <div class="action-btn-container">
 
-        <button id="shuffle-btn">Jugar</button>
+        <button id="play-btn">Jugar</button>
 
         <button id="play-again-btn">Jugar de nuevo</button>
       </div>
@@ -62,9 +62,9 @@
     <!-- Sección de aventuras ya seleccionadas -->
     <!-- ************************************* -->
     <section id="selected-container-section">
-      <div class="title-garbage">
+      <div class="title-trash">
         <h2>¡Te has animado a todo esto!</h2>
-        <a href="#"><img src="/img/basura.png" alt="Reiniciar el juego" /></a>
+        <a href="#" id="restart-game-btn"><img src="/img/basura.png" alt="Reiniciar el juego" /></a>
       </div>
       <div class="checked-adventure">
         <label><input type="checkbox" id="cbox1" value="basura"> Travel to himalaya</label><br>
@@ -141,9 +141,11 @@
       <div class="social-media">
         <h3>Comparte tu aventura</h3>
         <div class="social-media-btns">
-          <a href="https://api.whatsapp.com/send?text=[text]"></a><img src="/img/whatsapp.png" alt="whatsapp"/></a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://espai.es"><img src="/img/facebook.png" alt="Facebook"/></a>
-          <a href="https://twitter.com/intent/tweet?text=[text]&url=[url]&hashtags=[hashtag]"><img src="/img/twitter.png" alt="Twitter" /></a>
+          <a href="https://api.whatsapp.com/send?text=[text]"></a><img src="/img/whatsapp.png" alt="whatsapp" /></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://espai.es"><img src="/img/facebook.png"
+              alt="Facebook" /></a>
+          <a href="https://twitter.com/intent/tweet?text=[text]&url=[url]&hashtags=[hashtag]"><img
+              src="/img/twitter.png" alt="Twitter" /></a>
         </div>
       </div>
       <button class="calendar-btn">
@@ -193,9 +195,7 @@
   <!-- ****************** -->
   <!-- SCRIPTS JAVASCRIPT -->
   <!-- ****************** -->
+  <script src="js/trash.js" type="module"></script>
   <script src="/js/app.js" type="module" defer></script>
-  <script src="/js/showCards.js" type="module" defer></script>
-  <!-- <script src="./js/sounds.js"></script> -->
-</body>
 
 </html>

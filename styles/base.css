@@ -22,8 +22,11 @@
 /* Footer */
 @import url("/styles/organisms/footer.css");
 
-/*Selected container section*/
-@import url(/styles/organisms/selected_container_section.css);
+/*Selected container section*/ 
+@import url("/styles/organisms/selected_container_section.css");
+
+/*Restart game*/
+@import url("/styles/organisms/dialog3_restart_game.css");
 
 /* Media queries */
 @import url("/styles/media-queries/media-queries.css");

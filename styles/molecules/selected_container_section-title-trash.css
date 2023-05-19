@@ -1,0 +1,7 @@
+@import url("/styles/atoms/selected_container_section-title.css");
+@import url("/styles/atoms/selected-container-section-trash.css");
+
+#selected-container-section .title-trash{
+    display: flex;
+    justify-content: space-between;
+}
