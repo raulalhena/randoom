@@ -24,19 +24,20 @@ export function addLogoToCard() {
 
     const imgElement = article.querySelector(".logo-mezclar");
 
-    const intervalId = setInterval(() => {
-      const randomColor = getRandomHexColor();
-      imgElement.style.backgroundColor = randomColor;
-    }, 100);
+    const initialColor = getRandomHexColor();
+    imgElement.style.backgroundColor = initialColor;
 
     setTimeout(() => {
-      clearInterval(intervalId);
-      imgElement.style.backgroundColor = "#f87628";
-    }, 2000);
+      const intervalId = setInterval(() => {
+        const randomColor = getRandomHexColor();
+        imgElement.style.backgroundColor = randomColor;
+      }, 100);
 
-    // Initial execution
-    const randomColor = getRandomHexColor();
-    imgElement.style.backgroundColor = randomColor;
+      setTimeout(() => {
+        clearInterval(intervalId);
+        imgElement.style.backgroundColor = "#F87628";
+      }, 3000);
+    }, 1000);
   });
 }
 
