@@ -7,14 +7,12 @@ import { selectCategory } from "./selectCategory.js";
 import { shuffle } from "./shuffle.js";
 import { checkCategory } from "./checkCategory.js";
 import { createRestartDialog } from "./trash.js";
-import { closeDialog } from "./closeDialog.js";
 import { showInfoDialog } from "./showInfoDialog.js";
 import { closeDialog } from "./closeDialog.js";
 import { adventures } from "./data.js";
 import { play } from "./play.js";
 import { playAgain } from "./playAgain.js";
 import { changeButtonState } from "./changeButtonState.js";
-import { createRestartDialog } from "./trash.js";
 
 // Variables
 let userAdventures = [];
