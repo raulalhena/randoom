@@ -1,6 +1,7 @@
 import { addLogoToCard } from "./shuffle.js";
 import { flipCards } from "./flipCards.js";
 
+const cardContainer = document.querySelector(".card-container");
 const playBtn = document.getElementById("shuffle-btn");
 
 playBtn.addEventListener("click", () => {

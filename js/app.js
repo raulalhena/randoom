@@ -5,6 +5,7 @@ import { showCards } from "./showCards.js";
 import { selectCategory } from "./selectCategory.js";
 import { shuffle } from "./shuffle.js";
 import { checkCategory } from "./checkCategory.js";
+import "./play.js";
 import "./playAgain.js";
 
 // dialogo información
