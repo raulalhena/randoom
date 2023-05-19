@@ -1,11 +1,3 @@
-//  Importamos el array con las cartas de aventuras y la función shuffle para obtener un array
-//  aleatorio con varias
-import { adventures } from "./data.js";
-import { shuffle } from "./shuffle.js";
-import { selectCategory } from "./selectCategory.js";
-import { checkCategory } from "./checkCategory.js";
-import { removeAllChilds } from "./removeAllChilds.js";
-
 // Obtenemos el elemento con la clase .card-container
 const cardContainer = document.querySelector(".card-container");
 //
@@ -38,10 +30,7 @@ export const showCards = (userAdventures) => {
     }
 };
 
-window.addEventListener("load", () => {
-    removeAllChilds(cardContainer);
-    showCards(selectCategory(shuffle(adventures), checkCategory()));
-});
+
 
 
 
