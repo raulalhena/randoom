@@ -1,0 +1,8 @@
+#selected-container-setion .title-garbage a { 
+    display: flex;
+    justify-content: center;
+}
+
+#card-selected .social-media-btns a img {
+    background-color: transparent;
+}
