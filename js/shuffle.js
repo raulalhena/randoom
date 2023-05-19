@@ -17,8 +17,10 @@ export function addLogoToCard() {
   const articles = cardContainer.querySelectorAll("article");
   articles.forEach((article) => {
     article.innerHTML += `
-       <img class="logo-mezclar" src="/img/logoR.png" alt="logo"/>
-    `;
+       <div class="logo-mezclar-container">
+        <img class="logo-mezclar" src="/img/logoR.png" alt="logo"/>
+       </div>
+       `;
 
     const imgElement = article.querySelector(".logo-mezclar");
 
@@ -29,6 +31,7 @@ export function addLogoToCard() {
 
     setTimeout(() => {
       clearInterval(intervalId);
+      imgElement.style.backgroundColor = "#f87628";
     }, 2000);
 
     // Initial execution
