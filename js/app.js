@@ -1,4 +1,5 @@
-import { createAdventure } from "./createAdventureBtn.js";
+import { createAdventure } from "./createAdventure.js";
+import "./playAgain.js";
 
 // dialogo información
 
