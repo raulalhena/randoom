@@ -1,5 +1,6 @@
 // Muestra cartas en pantalla, crea elementos article y añade un eventListener a los botones de editar
 export const showCards = (cardContainer, userAdventures) => {
+    const customizeAdventureDialog = document.getElementById("customize-adventure");
     alert("show cards")
     // Crea 12 elementos article dentro del elemento card-container
     for (let i = 0; i < 12; i++) {
