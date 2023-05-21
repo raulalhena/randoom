@@ -10,3 +10,10 @@ export const closeDialog = (closeButtons, closeDialogues) => {
         });
     }
 }
+
+export const closeOneDialog = (closeBtn, dialogToClose) => {
+    closeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        dialogToClose.close();
+    });
+}

@@ -2,9 +2,8 @@
 import "./sounds.js";
 import { createAdventure } from "./createAdventure.js";
 import { removeAllChilds } from "./removeAllChilds.js";
-import { showCards } from "./showCards.js";
+import { createCards } from "./createCards.js";
 import { selectCategory } from "./selectCategory.js";
-import { shuffle } from "./shuffle.js";
 import { checkCategory } from "./checkCategory.js";
 import { createRestartDialog } from "./trash.js";
 import { showInfoDialog } from "./showInfoDialog.js";
@@ -13,9 +12,18 @@ import { adventures } from "./data.js";
 import { play } from "./play.js";
 import { playAgain } from "./playAgain.js";
 import { changeButtonState } from "./changeButtonState.js";
+import { selectValidAdventures } from "./selectAdventures.js";
 
 // Variables
 let userAdventures = [];
+
+// Ejecución en el momento de cargarse la página
+window.addEventListener("load", (e) => {
+  e.preventDefault();
+  removeAllChilds(cardContainer);
+  userAdventures = selectCategory(selectValidAdventures(adventures), checkCategory());
+  createCards(cardContainer, userAdventures, "front");
+});
 
 // Containers
 const cardContainer = document.querySelector(".card-container");
@@ -59,9 +67,3 @@ restartGameBtn.addEventListener('click', (e) => {
 });
 closeDialog(closeButtons, closeDialogues);
 
-// Ejecución en el momento de cargarse la página
-window.addEventListener("load", () => {
-  removeAllChilds(cardContainer);
-  userAdventures = selectCategory(shuffle(adventures), checkCategory())
-  showCards(cardContainer, userAdventures);
-});
