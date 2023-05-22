@@ -1,8 +1,9 @@
-import { closeDialog } from "./closeDialog.js";
+import { closeOneDialog } from "./closeDialog.js";
 // Muestra la carta seleccionada con la información
 export const showCardSelectedDialog = (adventure) => {
+    // alert("showed card " + adventure.name)
     const cardSelectedDialog = document.getElementById("card-selected");
-    cardSelectedDialog.innerHTML = `<button class="close-btn">&times;</button>
+    cardSelectedDialog.innerHTML = `<button class="close-btn" id="card-selected-close-btn">&times;</button>
     <section>
       <div>
         <h2>${adventure.name}</h2>
@@ -24,11 +25,7 @@ export const showCardSelectedDialog = (adventure) => {
         Agenda tu aventura <img src="/img/calendar.png" alt="Añadir aventura a tu calendario" />
       </button>
     </section>`;
-    const closeBtn = document.querySelectorAll(".close-btn");
-    closeDialog(closeBtn, cardSelectedDialog);
-    // closeBtn.addEventListener("click", () => {
-    //     e.preventDefault();
-
-    // })
+    const closeBtn = cardSelectedDialog.firstChild;
+    closeOneDialog(closeBtn, cardSelectedDialog);
     cardSelectedDialog.showModal();
 }

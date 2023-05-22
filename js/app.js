@@ -2,9 +2,8 @@
 import "./sounds.js";
 import { createAdventure } from "./createAdventure.js";
 import { removeAllChilds } from "./removeAllChilds.js";
-import { showCards } from "./showCards.js";
+import { createCards } from "./createCards.js";
 import { selectCategory } from "./selectCategory.js";
-import { shuffle } from "./shuffle.js";
 import { checkCategory } from "./checkCategory.js";
 import { createRestartDialog } from "./trash.js";
 import { showInfoDialog } from "./showInfoDialog.js";
@@ -13,9 +12,21 @@ import { adventures } from "./data.js";
 import { play } from "./play.js";
 import { playAgain } from "./playAgain.js";
 import { changeButtonState } from "./changeButtonState.js";
+import { selectValidAdventures } from "./selectAdventures.js";
+import { noCloseBtn } from "./yes-no-trash.js";
+import { yesCloseBtn } from "./yes-no-trash.js";
+
 
 // Variables
 let userAdventures = [];
+
+// Ejecución en el momento de cargarse la página
+window.addEventListener("load", (e) => {
+  e.preventDefault();
+  removeAllChilds(cardContainer);
+  userAdventures = selectCategory(selectValidAdventures(adventures), checkCategory());
+  createCards(cardContainer, userAdventures, "front");
+});
 
 // Containers
 const cardContainer = document.querySelector(".card-container");
@@ -33,6 +44,8 @@ const closeButtons = document.getElementsByClassName("close-btn");
 const helpButton = document.querySelector(".help-btn");
 const createBtn = document.querySelector('.create-btn');
 const restartGameBtn = document.getElementById('restart-game-btn');
+const noButton = document.querySelector('.no-btn');
+const yesButton = document.querySelector('.yes-btn')
 
 // Añade eventos de los elementos
 playBtn.addEventListener("click", (e) => {
@@ -51,17 +64,16 @@ helpButton.addEventListener("click", (e) => {
 });
 createBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  createAdventure(createAdventureDialog);
+  createAdventure(createAdventureDialog, adventures);
 });
 restartGameBtn.addEventListener('click', (e) => {
   e.preventDefault();
   createRestartDialog(restartDialog);
 });
 closeDialog(closeButtons, closeDialogues);
-
-// Ejecución en el momento de cargarse la página
-window.addEventListener("load", () => {
-  removeAllChilds(cardContainer);
-  userAdventures = selectCategory(shuffle(adventures), checkCategory())
-  showCards(cardContainer, userAdventures);
+restartDialog.addEventListener('click', () => {
+  noCloseBtn(restartDialog);
+});
+restartDialog.addEventListener('click', () => {
+  yesCloseBtn(restartDialog);
 });
