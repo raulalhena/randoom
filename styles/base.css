@@ -149,3 +149,20 @@ dialog::backdrop {
   background-color: #d9d9d9;
   opacity: 0.55;
 }
+
+#popup-elegir-aventura {
+  background: none;
+}
+
+#popup-elegir-aventura h2 {
+  border: 3px solid;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+}
