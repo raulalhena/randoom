@@ -4,11 +4,10 @@ main #menu-section {
 
 dialog {
   width: 250px;
-  height: auto !important;
+  height: 400px !important;
 }
 
 dialog section {
-  height: 70%;
   position: absolute;
   top: 50%;
   left: 50%;
