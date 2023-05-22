@@ -1,3 +1,5 @@
+import { showCustomizeAdventureDialog } from "./showCustomizeAdventureDialog.js";
+
 // Muestra cartas en pantalla, crea elementos article y añade un eventListener a los botones de editar
 export const createCards = (cardContainer, userAdventures, side) => {
     const customizeAdventureDialog = document.getElementById("customize-adventure");
@@ -38,8 +40,8 @@ export const createCards = (cardContainer, userAdventures, side) => {
 
             const btn = document
                 .getElementById(`edit-btn-${userAdventures[i].id}`)
-                .addEventListener("click", () => {
-                    customizeAdventureDialog.showModal();
+                .addEventListener("click", (e) => {
+                    showCustomizeAdventureDialog(e.target.parentNode.id.substring(9), customizeAdventureDialog);
                 });
         }
     }

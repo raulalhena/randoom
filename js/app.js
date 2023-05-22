@@ -71,6 +71,7 @@ restartGameBtn.addEventListener('click', (e) => {
   createRestartDialog(restartDialog);
 });
 closeDialog(closeButtons, closeDialogues);
+
 restartDialog.addEventListener('click', () => {
   noCloseBtn(restartDialog);
 });

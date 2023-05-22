@@ -9,7 +9,7 @@ export const createAdventure = (createAdventureDialog, adventures) => {
       <h2>¡Añade tu nueva aventura!</h2>
       <select name="categories" id="categories">`;
   for (let category of categories) {
-    myHTML += `<option value="${category}">${category.charAt(0).toUpperCase() + category.slice(1)}</option>`
+    myHTML += `<option value="${category}">${category.charAt(0).toUpperCase() + category.slice(1)}</option>`;
   }
 
 
