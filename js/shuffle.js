@@ -15,7 +15,7 @@ const colors = [
 
 // Funcion barajar recibe array y devuelve array mezclado y sin repetir
 export const shuffle = (array) => {
-  for (let i = array.length; i > 0; ) {
+  for (let i = array.length; i > 0;) {
     let randomIndex;
 
     randomIndex = Math.floor(Math.random() * i + 1);
@@ -35,12 +35,6 @@ export function addLogoToCard() {
     const shuffledColors = shuffle(colors); // Shuffle the colors array
 
     articles.forEach((article, index) => {
-      //   article.innerHTML += `
-      //   <div class="logo-mezclar-container">
-      //     <img class="logo-mezclar" src="/img/logoR.png" alt="logo"/>
-      //   </div>
-      // `;
-
       const imgElement = article.querySelector(".logo-mezclar");
       const initialColor = shuffledColors[index]; // Get the color from the shuffled array
 
@@ -56,6 +50,7 @@ export function addLogoToCard() {
         setTimeout(() => {
           clearInterval(intervalId);
           imgElement.style.backgroundColor = "#F87628";
+          res();
         }, 3000);
       }, 1000);
     });
