@@ -15,7 +15,7 @@ const colors = [
 
 // Funcion barajar recibe array y devuelve array mezclado y sin repetir
 export const shuffle = (array) => {
-  for (let i = array.length; i > 0;) {
+  for (let i = array.length; i > 0; ) {
     let randomIndex;
 
     randomIndex = Math.floor(Math.random() * i + 1);
@@ -50,7 +50,16 @@ export function addLogoToCard() {
         setTimeout(() => {
           clearInterval(intervalId);
           imgElement.style.backgroundColor = "#F87628";
-          res();
+          if (index === articles.length - 1) {
+            setTimeout(() => {
+              const dialog = document.getElementById("popup-elegir-aventura");
+              dialog.showModal();
+              setTimeout(() => {
+                dialog.close();
+                res();
+              }, 2500);
+            }, 500);
+          }
         }, 3000);
       }, 1000);
     });
