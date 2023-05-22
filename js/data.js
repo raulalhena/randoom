@@ -448,5 +448,5 @@ export const categories = [
     "adrenalina",
     "cultura",
     "viajes",
-    "comida"
+    "comida", 
 ]
