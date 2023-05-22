@@ -5,9 +5,10 @@
 @import url("/styles/atoms/cardselected_social-media-btn.css");
 
 #card-selected section {
-    width: 100%;
-    text-align: left;
+  /* width: 100%; */
+  text-align: left;
+  height: auto;
 
-    /* Look */
-    background: #2D1029;
+  /* Look */
+  background: #2d1029;
 }
