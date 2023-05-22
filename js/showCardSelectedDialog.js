@@ -21,8 +21,10 @@ export const showCardSelectedDialog = (adventure) => {
               src="/img/twitter.png" alt="Twitter" /></a>
         </div>
       </div>
-      <button class="calendar-btn">
-        Agenda tu aventura <img src="/img/calendar.png" alt="Añadir aventura a tu calendario" />
+      <a class="calendar-btn" href="https://www.google.com/calendar/render?action=TEMPLATE&text=${adventure.name}&dates=20230525T090000Z/20230524T100000Z">
+    Agenda tu aventura <img src="/img/calendar.png" alt="Añadir aventura a tu calendario" />
+</a>
+
       </button>
     </section>`;
 
