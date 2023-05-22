@@ -1,12 +1,10 @@
-@import url(/styles/atoms/selected_container_section-check.css);
+@import url("/styles/atoms/selected_container_section-check.css");
 
 
 #checked-adventure {
-    list-style: none;
-    color: #7D7D7D;
-    font-size: 11px;
-    text-align: left;
-    margin-left: 12px;
-  }
-
- 
+  list-style: none;
+  color: #7D7D7D;
+  font-size: 11px;
+  text-align: left;
+  margin-left: 12px;
+}

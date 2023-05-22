@@ -5,7 +5,6 @@ import { addLogoToCard } from "./shuffle.js";
 export const addClickToCards = async (cardContainer, shuffledAdventures) => {
     // console.log("addclicktocards shuffle adves", shuffledAdventures)
     await addLogoToCard();
-    const articles = cardContainer.querySelectorAll("article");
     cardContainer.addEventListener("click", (event) => {
         event.preventDefault();
         if (event.target.parentNode.classList.contains("logo-mezclar-container")) {

@@ -4,7 +4,7 @@ const colors = [
   "#F7F7F7",
   "#D9D9D9",
   "#26B19A",
-  "#041A43",
+  "#485F87",
   "#943B7F",
   "#840A0E",
   "#F7352C",
@@ -15,7 +15,7 @@ const colors = [
 
 // Funcion barajar recibe array y devuelve array mezclado y sin repetir
 export const shuffle = (array) => {
-  for (let i = array.length; i > 0; ) {
+  for (let i = array.length; i > 0;) {
     let randomIndex;
 
     randomIndex = Math.floor(Math.random() * i + 1);

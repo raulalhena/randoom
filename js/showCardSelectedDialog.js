@@ -1,4 +1,6 @@
 import { closeOneDialog } from "./closeDialog.js";
+import { strikeThrough } from "./strikeText.js";
+import { unstrikeText } from "./unstrikeText.js";
 // Muestra la carta seleccionada con la información
 export const showCardSelectedDialog = (adventure) => {
   const cardSelectedDialog = document.getElementById("card-selected");
@@ -29,10 +31,32 @@ export const showCardSelectedDialog = (adventure) => {
   // AÑADIR CARTA A LA SECCION DE AVENTURAS SELECCIONADAS
   const selectedCard = document.querySelector(".checked-adventure");
   selectedCard.innerHTML += `
-    <label>
-      <input type="checkbox" id="cbox1" value="basura"> ${adventure.name}
+    <label id="cbox1">
+      <input type="checkbox" id="cbox-${adventure.id}"  value="basura"> <span style="" id="text-${adventure.id}">${adventure.name}</span>
     </label><br>
   `;
+  const selectedAdventures = document.getElementById(`cbox1`);
+  selectedAdventures.addEventListener("change", (e) => {
+    e.preventDefault();
+    const childNodes = selectedAdventures.childNodes;
+    alert(e.target.childNodes[0])
+    for (let i = 0; i < childNodes.length; i++) {
+      if (childNodes[i].checked) {
+        childNodes[i + 1].nodeValue = strikeThrough(childNodes[i + 1].nodeValue);
+      }
+    }
+
+    const children = Array.from(selectedAdventures.children);
+    children.forEach(child => {
+      if (child.checked) {
+        document.getElementById(`text-${adventure.id}`).innerText = strikeThrough(document.getElementById(`text-${adventure.id}`).innerText);
+      } else {
+        document.getElementById(`text-${adventure.id}`).innerText = unstrikeText(document.getElementById(`text-${adventure.id}`).innerText);
+      }
+    })
+
+
+  });
   ///////////////////////////////////
   const closeBtn = cardSelectedDialog.firstChild;
   closeOneDialog(closeBtn, cardSelectedDialog);
