@@ -22,7 +22,7 @@
 /* Footer */
 @import url("/styles/organisms/footer.css");
 
-/*Selected container section*/ 
+/*Selected container section*/
 @import url("/styles/organisms/selected_container_section.css");
 
 /*Restart game*/
@@ -35,7 +35,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #ffffff;
 }
 
 @font-face {
@@ -144,4 +143,9 @@ main #menu-section {
 
 .back-img {
   opacity: 1;
+}
+
+dialog::backdrop {
+  background-color: #d9d9d9;
+  opacity: 0.55;
 }
