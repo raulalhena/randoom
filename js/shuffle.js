@@ -57,7 +57,7 @@ export function addLogoToCard() {
               setTimeout(() => {
                 dialog.close();
                 res();
-              }, 2500);
+              }, 1500);
             }, 500);
           }
         }, 3000);
