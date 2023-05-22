@@ -1,16 +1,10 @@
-
 import { adventures } from "./data.js";
 
-
 export const updateAdventure = (userAdventure) => {
-    adventures.map(adv => {
-        if (adv.name === userAdventure.name) {
-            adv.name = userAdventure.name;
-            adv.description = userAdventure.description;
-        }
-    })
+    const adventure = adventures.find(adv => adv.name === userAdventure.name)
+    adventure.name = userAdventure.name;
+    adventure.description = userAdventure.description;
+    return adventure;
 }
-
-console.log(adventures)
 
 console.log(updateAdventure({ name: "Planta un árbol", description: "Un abol del bueno" }));
