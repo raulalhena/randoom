@@ -150,6 +150,7 @@ dialog::backdrop {
   opacity: 0.55;
 }
 
+
 #popup-elegir-aventura {
   background: none;
 }
@@ -166,3 +167,11 @@ dialog::backdrop {
   text-align: center;
   padding: 10px;
 }
+
+/* efecto de transición*/ 
+
+.scale-animation {
+  transform: scaleX(0.2);
+  transition: transform 0.5s ease-in-out;
+}
+
