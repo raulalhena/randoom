@@ -34,11 +34,11 @@ export function addLogoToCard() {
   const shuffledColors = shuffle(colors); // Mezclar los colores
 
   articles.forEach((article, index) => {
-    article.innerHTML += `
-      <div class="logo-mezclar-container">
-        <img class="logo-mezclar" src="/img/logoR.png" alt="logo"/>
-      </div>
-    `;
+    // article.innerHTML += `
+    //   <div class="logo-mezclar-container">
+    //     <img class="logo-mezclar" src="/img/logoR.png" alt="logo"/>
+    //   </div>
+    // `;
 
     const imgElement = article.querySelector(".logo-mezclar");
     const initialColor = shuffledColors[index]; // Coge un color del array mezclado
