@@ -13,6 +13,9 @@ import { play } from "./play.js";
 import { playAgain } from "./playAgain.js";
 import { changeButtonState } from "./changeButtonState.js";
 import { selectValidAdventures } from "./selectAdventures.js";
+import { noCloseBtn } from "./yes-no-trash.js";
+import { yesCloseBtn } from "./yes-no-trash.js";
+
 
 // Variables
 let userAdventures = [];
@@ -41,6 +44,8 @@ const closeButtons = document.getElementsByClassName("close-btn");
 const helpButton = document.querySelector(".help-btn");
 const createBtn = document.querySelector('.create-btn');
 const restartGameBtn = document.getElementById('restart-game-btn');
+const noButton = document.querySelector('.no-btn');
+const yesButton = document.querySelector('.yes-btn')
 
 // Añade eventos de los elementos
 playBtn.addEventListener("click", (e) => {
@@ -66,4 +71,9 @@ restartGameBtn.addEventListener('click', (e) => {
   createRestartDialog(restartDialog);
 });
 closeDialog(closeButtons, closeDialogues);
-
+restartDialog.addEventListener('click', () => {
+  noCloseBtn(restartDialog);
+});
+restartDialog.addEventListener('click', () => {
+  yesCloseBtn(restartDialog);
+});

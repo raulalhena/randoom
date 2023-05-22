@@ -12,4 +12,5 @@
 #menu-section nav button:focus {
   background-color: #26b19a;
   color: #f7f7f7;
+  border-style: none;
 }
