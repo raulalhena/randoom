@@ -1,3 +1,17 @@
+const colors = [
+  "#84E5CD",
+  "#106061",
+  "#F7F7F7",
+  "#D9D9D9",
+  "#26B19A",
+  "#041A43",
+  "#943B7F",
+  "#840A0E",
+  "#F7352C",
+  "#FC792B",
+  "#FFD66A",
+  "#FDE8A4",
+];
 
 // Funcion barajar recibe array y devuelve array mezclado y sin repetir
 export const shuffle = (array) => {
@@ -15,20 +29,29 @@ export const shuffle = (array) => {
 };
 
 export function addLogoToCard() {
-  return new Promise(res => {
-    const cardContainer = document.querySelector(".card-container");
-    const articles = cardContainer.querySelectorAll("article");
-    articles.forEach((article) => {
-      // article.innerHTML += `
-      //  <div class="logo-mezclar-container">
-      //   <img class="logo-mezclar" src="/img/logoR.png" alt="logo"/>
-      //  </div>
-      //  `;
+  const cardContainer = document.querySelector(".card-container");
+  const articles = cardContainer.querySelectorAll("article");
 
-      const imgElement = article.querySelector(".logo-mezclar");
+  const shuffledColors = shuffle(colors); // Mezclar los colores
 
-      const initialColor = getRandomHexColor();
-      imgElement.style.backgroundColor = initialColor;
+  articles.forEach((article, index) => {
+    article.innerHTML += `
+      <div class="logo-mezclar-container">
+        <img class="logo-mezclar" src="/img/logoR.png" alt="logo"/>
+      </div>
+    `;
+
+    const imgElement = article.querySelector(".logo-mezclar");
+    const initialColor = shuffledColors[index]; // Coge un color del array mezclado
+
+    imgElement.style.backgroundColor = initialColor;
+
+    setTimeout(() => {
+      const intervalId = setInterval(() => {
+        const randomColor =
+          shuffledColors[Math.floor(Math.random() * shuffledColors.length)];
+        imgElement.style.backgroundColor = randomColor;
+      }, 100);
 
       setTimeout(() => {
         const intervalId = setInterval(() => {
@@ -46,8 +69,3 @@ export function addLogoToCard() {
     });
   });
 }
-
-// FUNCION GENERAR COLOR RANDOM
-const getRandomHexColor = () => {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-};

@@ -1,4 +1,3 @@
-
 // Añade evento click a todos los botones de cerrar dialogos
 export const closeDialog = (closeButtons, closeDialogues,) => {
     //bucle para cerrar las ventanas
