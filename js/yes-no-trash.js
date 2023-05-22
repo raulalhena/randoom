@@ -9,6 +9,7 @@ export const noCloseBtn = (restartDialog) => {
 //Falta que se borren los datos 
 export const yesCloseBtn = (restartDialog) => {
   restartDialog.close();
+  location.reload();
 };
 
 
