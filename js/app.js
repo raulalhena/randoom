@@ -59,7 +59,7 @@ helpButton.addEventListener("click", (e) => {
 });
 createBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  createAdventure(createAdventureDialog);
+  createAdventure(createAdventureDialog, adventures);
 });
 restartGameBtn.addEventListener('click', (e) => {
   e.preventDefault();

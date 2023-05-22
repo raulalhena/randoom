@@ -1,5 +1,5 @@
 //generador de id
-function generarId() {
+export function generarId() {
     let a = Date.now().toString(30);
     let b = Math.random().toString(30).substring(2);
     return a + b;
@@ -439,4 +439,14 @@ export const adventures = [
         selected: false,
         completed: false,
     },
+]
+
+
+// Categorias de las aventuras
+export const categories = [
+    "legado",
+    "adrenalina",
+    "cultura",
+    "viajes",
+    "comida"
 ]
