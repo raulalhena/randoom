@@ -15,10 +15,11 @@ const colors = [
 
 // Funcion barajar recibe array y devuelve array mezclado y sin repetir
 export const shuffle = (array) => {
-  for (let i = array.length; i > 0; ) {
+
+  for (let i = array.length; i > 0;) {
     let randomIndex;
 
-    randomIndex = Math.floor(Math.random() * i);
+    randomIndex = Math.floor(Math.random() * i + 1);
     i--;
 
     [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
@@ -53,9 +54,18 @@ export function addLogoToCard() {
       }, 100);
 
       setTimeout(() => {
-        clearInterval(intervalId);
-        imgElement.style.backgroundColor = "#F87628";
-      }, 3000);
-    }, 1000);
+        const intervalId = setInterval(() => {
+          const randomColor = getRandomHexColor();
+          imgElement.style.backgroundColor = randomColor;
+        }, 100);
+
+        setTimeout(() => {
+          clearInterval(intervalId);
+          imgElement.style.backgroundColor = "#F87628";
+          res();
+        }, 3000);
+      }, 1000);
+
+    });
   });
 }
