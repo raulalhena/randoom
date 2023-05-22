@@ -4,5 +4,5 @@ import { shuffle } from "./shuffle.js"
 export const selectValidAdventures = (adventures) => {
     const randomizedAdventures = shuffle(adventures);
     const userAdventures = randomizedAdventures.filter(adventure => adventure.selected === false);
-    return userAdventures.splice(0, 10);
+    return userAdventures;
 }

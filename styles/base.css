@@ -170,3 +170,8 @@ dialog::backdrop {
   transform: scaleX(0.2);
   transition: transform 0.5s ease-in-out;
 }
+
+.completed-text {
+  color: #999999;
+  background: #26B19A;
+}

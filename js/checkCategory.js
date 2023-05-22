@@ -1,5 +1,5 @@
-// Comprueba cual de los botones de categoría está seleccionado y devuelve el texto en minúsculas
-// si no hay ninguno, devuelve el texto "todas"
+// Comprueba cual de los botones de categoría está seleccionado y devuelve el texto en minúsculas.
+// Si no hay ninguno, devuelve el texto "todas"
 export const checkCategory = () => {
 
     // Seleccionamos los hijos (botones) del elemento nav

@@ -1,5 +1,4 @@
 .completed-text {
-
-    text-decoration: line-through;
-    display: inline-block;
+    color: #999999;
+    background: #26B19A;
 }

@@ -13,8 +13,8 @@ import { play } from "./play.js";
 import { playAgain } from "./playAgain.js";
 import { changeButtonState } from "./changeButtonState.js";
 import { selectValidAdventures } from "./selectAdventures.js";
-import { noCloseBtn } from "./yes-no-trash.js";
-import { yesCloseBtn } from "./yes-no-trash.js";
+import { yesCloseBtn, noCloseBtn } from "./yes-no-trash.js";
+import { showSelectedCategory } from "./showSelectedCategory.js";
 
 
 // Variables
@@ -44,19 +44,18 @@ const closeButtons = document.getElementsByClassName("close-btn");
 const helpButton = document.querySelector(".help-btn");
 const createBtn = document.querySelector('.create-btn');
 const restartGameBtn = document.getElementById('restart-game-btn');
-const noButton = document.querySelector('.no-btn');
-const yesButton = document.querySelector('.yes-btn')
+const navButtons = document.querySelector("nav").children;
 
 // Añade eventos de los elementos
 playBtn.addEventListener("click", (e) => {
   e.preventDefault();
   play(cardContainer, userAdventures);
-  changeButtonState(playBtn);
+  changeButtonState(playBtn, true);
 });
 playAgainBtn.addEventListener("click", (e) => {
   e.preventDefault();
   playAgain(cardContainer, adventures);
-  changeButtonState(playBtn);
+  changeButtonState(playBtn, false);
 });
 helpButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -72,9 +71,18 @@ restartGameBtn.addEventListener('click', (e) => {
 });
 closeDialog(closeButtons, closeDialogues);
 
-restartDialog.addEventListener('click', () => {
+restartDialog.addEventListener('click', (e) => {
+  e.preventDefault();
   noCloseBtn(restartDialog);
 });
-restartDialog.addEventListener('click', () => {
+restartDialog.addEventListener('click', (e) => {
+  e.preventDefault();
   yesCloseBtn(restartDialog);
 });
+
+for (const btn of navButtons) {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    showSelectedCategory(cardContainer, btn.innerText.toLowerCase());
+  });
+}
