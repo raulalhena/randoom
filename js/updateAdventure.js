@@ -1,13 +1,15 @@
 import { adventures } from "./data.js";
 
-export const updateAdventure = (userAdventure) => {
-    const adventure = adventures.find(adv => adv.name === userAdventure.name)
-    adventure.name = userAdventure.name;
-    adventure.description = userAdventure.description;
-    adventure.category = userAdventure.category;
-    return adventure;
+export const updateAdventure = (userAdventure, customizedCard) => {
+    console.log("before ", adventures)
+    const advIndex = adventures.findIndex(adv => adv.id === userAdventure.id);
+    adventures[advIndex].name = userAdventure.name;
+    adventures[advIndex].description = userAdventure.description;
+    adventures[advIndex].category = userAdventure.category;
+    const children = Array.from(customizedCard.children);
+    children.forEach(child => {
+        if (child.classList.contains("card-content-title")) {
+            child.firstChild.nextElementSibling.innerText = adventures[advIndex].name;
+        }
+    });
 }
-
-console.log(updateAdventure({ name: "Planta un árbol", description: "Un abol del bueno" }));
-
-console.log(adventures)

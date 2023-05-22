@@ -41,7 +41,7 @@ export const createCards = (cardContainer, userAdventures, side) => {
             const btn = document
                 .getElementById(`edit-btn-${userAdventures[i].id}`)
                 .addEventListener("click", (e) => {
-                    showCustomizeAdventureDialog(e.target.parentNode.id.substring(9), customizeAdventureDialog);
+                    showCustomizeAdventureDialog(e.target.parentNode.id.substring(9), customizeAdventureDialog, userAdventures);
                 });
         }
     }
