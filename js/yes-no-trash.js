@@ -1,15 +1,14 @@
 //Botón "NO"
 
-export const noCloseBtn = (restartDialog) => {
+export const noBtn = (restartDialog) => {
   restartDialog.close();
 };
 
 
 //Botón "SI"
 //Falta que se borren los datos 
-export const yesCloseBtn = (restartDialog) => {
+export const yesBtn = (restartDialog) => {
   restartDialog.close();
-  location.reload();
 };
 
 

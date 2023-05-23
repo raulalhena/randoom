@@ -1,15 +1,13 @@
-import { adventures } from "./data.js";
 
-export const updateAdventure = (userAdventure, customizedCard) => {
-    console.log("before ", adventures)
-    const advIndex = adventures.findIndex(adv => adv.id === userAdventure.id);
-    adventures[advIndex].name = userAdventure.name;
-    adventures[advIndex].description = userAdventure.description;
-    adventures[advIndex].category = userAdventure.category;
+export const updateAdventure = (customizedAdventure, customizedCard, userAdventures) => {
+    const advIndex = userAdventures.findIndex(adv => adv.id === customizedAdventure.id);
+    userAdventures[advIndex].name = customizedAdventure.name;
+    userAdventures[advIndex].description = customizedAdventure.description;
+    userAdventures[advIndex].category = customizedAdventure.category;
     const children = Array.from(customizedCard.children);
     children.forEach(child => {
         if (child.classList.contains("card-content-title")) {
-            child.firstChild.nextElementSibling.innerText = adventures[advIndex].name;
+            child.firstChild.nextElementSibling.innerText = userAdventures[advIndex].name;
         }
     });
 }

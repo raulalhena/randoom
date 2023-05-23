@@ -44,7 +44,7 @@ export const showCustomizeAdventureDialog = (adventureId, customizeAdventureDial
             description: description.value,
             category: categorySelected.value
         }
-        updateAdventure(customizedAdventure, customizedCard);
+        updateAdventure(customizedAdventure, customizedCard, userAdventures);
     })
 
     const closeBtn = document.getElementById("customize-adventure-close-btn");

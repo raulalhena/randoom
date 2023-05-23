@@ -448,5 +448,21 @@ export const categories = [
     "adrenalina",
     "cultura",
     "viajes",
-    "comida", 
+    "comida",
 ]
+
+// Colores de los logos traseros de las cartas
+const colors = [
+    "#84E5CD",
+    "#106061",
+    "#F7F7F7",
+    "#D9D9D9",
+    "#26B19A",
+    "#485F87",
+    "#943B7F",
+    "#840A0E",
+    "#F7352C",
+    "#FC792B",
+    "#FFD66A",
+    "#FDE8A4",
+];
