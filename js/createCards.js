@@ -3,12 +3,10 @@ import { showCustomizeAdventureDialog } from "./showCustomizeAdventureDialog.js"
 // Muestra cartas en pantalla, crea elementos article y añade un eventListener a los botones de editar
 export const createCards = (cardContainer, userAdventures, side) => {
     const customizeAdventureDialog = document.getElementById("customize-adventure");
-    let backgroundImage;
 
     // Crea 12 elementos article dentro del elemento card-container
     for (let i = 0; i < userAdventures.length; i++) {
         const child = cardContainer.appendChild(document.createElement("article"));
-
 
         if (side === "back") {
             child.classList.remove(`card-front`);

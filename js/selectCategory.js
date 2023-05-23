@@ -10,8 +10,8 @@ export const selectCategory = (shuffledAdventures, category) => {
       return adventure.category === category;
     });
 
-    return adventuresByCategory;
+    return adventuresByCategory.splice(0, 8);;
   }
 
-  return shuffledAdventures;
+  return shuffledAdventures.splice(0, 8);;
 };

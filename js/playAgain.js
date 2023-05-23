@@ -6,10 +6,11 @@ import { selectValidAdventures } from "./selectAdventures.js";
 
 // Jugar de nuevo, borra los articles (cards) y muestra de nuevo lsa cartas 
 // según la categoria seleccionada
-export const playAgain = (cardContainer, adventures) => {
+export const playAgain = (cardContainer, userAdventures) => {
     removeAllChilds(cardContainer);
-    createCards(cardContainer, selectCategory(selectValidAdventures(adventures), checkCategory()), "front");
-
+    const filteredUserAdventures = selectCategory(selectValidAdventures(userAdventures), checkCategory());
+    createCards(cardContainer, filteredUserAdventures, "front");
+    return filteredUserAdventures;
 }
 
 

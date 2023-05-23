@@ -1,10 +1,9 @@
 import { closeOneDialog } from "./closeDialog.js";
-import { adventures } from "./data.js";
 import { selectedCardsArray } from "./selectedCard.js";
 import { strikeThrough } from "./strikeText.js";
 import { unstrikeText } from "./unstrikeText.js";
 // Muestra la carta seleccionada con la información
-export const showCardSelectedDialog = (adventure) => {
+export const showCardSelectedDialog = (adventure, userAdventures) => {
   const cardSelectedDialog = document.getElementById("card-selected");
 
   cardSelectedDialog.innerHTML = `<button class="close-btn" id="card-selected-close-btn">&times;</button>
@@ -38,8 +37,8 @@ export const showCardSelectedDialog = (adventure) => {
     </label><br>
   `;
   // QUITAR ADVENTURE DEL ARRAY ADVENTURES
-  const index = adventures.indexOf(adventure);
-  adventures.splice(index, 1);
+  const index = userAdventures.indexOf(adventure);
+  userAdventures.splice(index, 1);
   // AGREGAR ADVENTURE EN ARRAY DE ADVENTURES SELECCIONADAS
   selectedCardsArray.push(adventure);
   const selectedAdventures = document.getElementById(`cbox1`);

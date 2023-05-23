@@ -17,14 +17,14 @@ import { resetGame } from "./resetGame.js";
 
 
 // Variables
-let userAdventures = [];
+const userAdventures = adventures;
+let userAdventuresToShow = [];
 
 // Ejecución en el momento de cargarse la página
 window.addEventListener("load", (e) => {
   e.preventDefault();
   removeAllChilds(cardContainer);
-  userAdventures = selectCategory(selectValidAdventures(adventures), checkCategory());
-  createCards(cardContainer, userAdventures, "front");
+  userAdventuresToShow = playAgain(cardContainer, userAdventures);
 });
 
 // Containers
@@ -49,12 +49,12 @@ const yesButton = document.querySelector('.yes-btn');
 // Añade eventos de los elementos
 playBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  play(cardContainer, userAdventures);
+  play(cardContainer, playAgain(cardContainer, userAdventures));
   changeButtonState(playBtn);
 });
 playAgainBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  playAgain(cardContainer, adventures);
+  playAgain(cardContainer, userAdventures);
   changeButtonState(playBtn);
 });
 helpButton.addEventListener("click", (e) => {
@@ -63,7 +63,7 @@ helpButton.addEventListener("click", (e) => {
 });
 createBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  createAdventure(createAdventureDialog, adventures);
+  createAdventure(createAdventureDialog, userAdventures);
 });
 restartGameBtn.addEventListener('click', (e) => {
   e.preventDefault();
