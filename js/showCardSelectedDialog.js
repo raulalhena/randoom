@@ -46,7 +46,6 @@ export const showCardSelectedDialog = (adventure) => {
   selectedAdventures.addEventListener("change", (e) => {
     e.preventDefault();
     const childNodes = selectedAdventures.childNodes;
-    alert(e.target.childNodes[0])
     for (let i = 0; i < childNodes.length; i++) {
       if (childNodes[i].checked) {
         childNodes[i + 1].nodeValue = strikeThrough(childNodes[i + 1].nodeValue);
